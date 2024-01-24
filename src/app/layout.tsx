@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
-import { M_PLUS_1 } from 'next/font/google';
 import './globals.css';
 import { cn } from '@/lib/utils';
-
-const m1Plus = M_PLUS_1({ subsets: ['latin'], variable: '--font-sans' });
+import { m1PlusRounded } from '@/components/fonts';
+import { Navbar } from '@/components/Navbar';
+import { ThemeProvider } from '@/components/ThemeProvider';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,14 +16,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    // NOTE: There could be another way to preve missmatching between cliente and server renders 
+    <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
           'min-h-screen bg-background font-sans antialiased',
-          m1Plus.variable,
+          m1PlusRounded.className,
         )}
       >
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Navbar />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

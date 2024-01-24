@@ -1,10 +1,9 @@
-import { Button } from '@/components/ui/button';
+import { Container } from '@/components/Container';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      hello world
-      <Button>jeje</Button>
+    <main className="min-h-screen">
+      <Container>Portfolio Content</Container>
     </main>
   );
 }
