@@ -3,19 +3,27 @@
 import NextLink, { LinkProps } from 'next/link';
 import { Container } from '@/components/Container';
 import ThemeToggle from '@/components/ThemeToggle';
-import { Button } from './ui/button';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
+import { Github } from 'lucide-react';
 
-type LinkItemProps = { children: React.ReactNode } & LinkProps;
-const LinkItem = ({ children, ...props }: LinkItemProps) => {
+type LinkItemProps = {
+  children?: React.ReactNode;
+  className?: string;
+} & LinkProps;
+
+const LinkItem = ({ className, children, ...props }: LinkItemProps) => {
   const path = usePathname();
   return (
     <NextLink
       {...props}
-      className={cn('p-2 underline-offset-4 hover:underline', {
-        'bg-primary/75': path === props.href,
-      })}
+      className={cn(
+        'p-2 underline-offset-4 hover:underline',
+        {
+          'bg-primary/70': path === props.href,
+        },
+        className,
+      )}
     >
       {children}
     </NextLink>
@@ -32,10 +40,10 @@ export const Navbar = ({ ...props }: Props) => {
     >
       <Container className="flex items-center justify-between">
         {/* Logo and name */}
-        <div>
+        <div className="mr-5">
           <h1>
             <NextLink href="/">
-              <span className='font-bold'>
+              <span className="font-bold tracking-tighter">
                 {/*TODO: icon*/}
                 Johan Restrepo
               </span>
@@ -44,8 +52,15 @@ export const Navbar = ({ ...props }: Props) => {
         </div>
 
         {/* Navlinks */}
-        <div>
+        <div className="flex w-auto min-w-96 flex-grow items-center gap-2">
           <LinkItem href="/works">Works</LinkItem>
+          <LinkItem
+            href="https://github.com/JohanRestrepo19"
+            className="inline-flex items-center gap-1"
+          >
+            <Github size={'1rem'} />
+            Source
+          </LinkItem>
         </div>
 
         <div>

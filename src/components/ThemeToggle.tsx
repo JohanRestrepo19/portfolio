@@ -20,13 +20,17 @@ const ThemeToggle = () => {
 
   const Icon =
     resolvedTheme === 'light' ? (
-      <Moon className="h-[1.2rem] w-[1.2rem]" />
+      <Moon className="h-[1.2rem] w-[1.2rem]" fill="none" />
     ) : (
-      <Sun className="h-[1.2rem] w-[1.2rem]" />
+      <Sun className="h-[1.2rem] w-[1.2rem]" fill="none" />
     );
 
   return (
-    <Button size="icon" variant="outline" onClick={handleToggleTheme}>
+    <Button
+      size="icon"
+      onClick={handleToggleTheme}
+      className="bg-purple-600 hover:bg-purple-700 dark:bg-orange-200 dark:hover:bg-orange-300"
+    >
       {Icon}
     </Button>
   );
