@@ -16,12 +16,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    // NOTE: There could be another way to preve missmatching between cliente and server renders 
+    // NOTE: There could be another way to preve missmatching between cliente and server renders
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
+          m1PlusRounded.variable,
           'min-h-screen bg-background font-sans antialiased',
-          m1PlusRounded.className,
         )}
       >
         <ThemeProvider
