@@ -20,7 +20,7 @@ const LinkItem = ({ className, children, ...props }: LinkItemProps) => {
       className={cn(
         'p-2 underline-offset-4 hover:underline',
         {
-          'bg-primary/70': path === props.href,
+          'bg-secondary/45 rounded-md': path === props.href,
         },
         className,
       )}
@@ -36,7 +36,7 @@ export const Navbar = ({ ...props }: Props) => {
   return (
     <nav
       {...props}
-      className="sticky top-0 z-10 w-full bg-white/40 backdrop-blur-sm"
+      className="sticky top-0 z-10 w-full bg-[#f2e9e1]/50 dark:bg-[#26233a]/50 backdrop-blur-sm"
     >
       <Container className="flex items-center justify-between">
         {/* Logo and name */}
@@ -53,7 +53,7 @@ export const Navbar = ({ ...props }: Props) => {
 
         {/* Navlinks */}
         <div className="flex w-auto min-w-96 flex-grow items-center gap-2">
-          <LinkItem href="/works">Works</LinkItem>
+          <LinkItem href="/projects">Projects</LinkItem>
           <LinkItem
             href="https://github.com/JohanRestrepo19"
             className="inline-flex items-center gap-1"

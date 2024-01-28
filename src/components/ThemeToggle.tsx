@@ -29,7 +29,7 @@ const ThemeToggle = () => {
     <Button
       size="icon"
       onClick={handleToggleTheme}
-      className="bg-purple-600 hover:bg-purple-700 dark:bg-orange-200 dark:hover:bg-orange-300"
+      className="bg-[#c4a7e7] hover:bg-purple-700 dark:bg-[#f6c177] dark:hover:bg-orange-300"
     >
       {Icon}
     </Button>
