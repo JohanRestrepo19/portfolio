@@ -78,23 +78,21 @@ export const Navbar = ({ ...props }: Props) => {
 
           <div className="block md:hidden">
             <DropdownMenu>
-              <DropdownMenuTrigger>
+              <DropdownMenuTrigger asChild>
                 <Button variant="outline">
                   <Menu className="h-[1.2rem] w-[1.2rem]" />
                 </Button>
-                <DropdownMenuContent>
-                  <DropdownMenuItem>
-                    <NextLink href="/projects">Projects</NextLink>
-                  </DropdownMenuItem>
-
-                  {/* TODO: change link to source repo */}
-                  <DropdownMenuItem>
-                    <NextLink href="https://github.com/JohanRestrepo19">
-                      Source
-                    </NextLink>
-                  </DropdownMenuItem>
-                </DropdownMenuContent>
               </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <NextLink href="/projects">
+                  <DropdownMenuItem>Projects</DropdownMenuItem>
+                </NextLink>
+
+                {/* TODO: change link to source repo */}
+                <NextLink href="https://github.com/JohanRestrepo19">
+                  <DropdownMenuItem>Source</DropdownMenuItem>
+                </NextLink>
+              </DropdownMenuContent>
             </DropdownMenu>
           </div>
         </div>
