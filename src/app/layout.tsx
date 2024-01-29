@@ -4,6 +4,7 @@ import { cn } from '@/lib/utils';
 import { m1PlusRounded } from '@/components/fonts';
 import { Navbar } from '@/components/Navbar';
 import { ThemeProvider } from '@/components/ThemeProvider';
+import  Container from '@/components/Container';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +17,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    // NOTE: There could be another way to preve missmatching between cliente and server renders
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
@@ -31,7 +31,8 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navbar />
-          {children}
+          <Container>{children}</Container>
+          {/* TODO: <Footer /> */}
         </ThemeProvider>
       </body>
     </html>

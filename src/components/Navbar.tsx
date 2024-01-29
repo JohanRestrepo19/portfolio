@@ -4,7 +4,7 @@ import NextLink, { LinkProps } from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Github, Menu } from 'lucide-react';
 
-import { Container } from '@/components/Container';
+import Container from '@/components/Container';
 import ThemeToggle from '@/components/ThemeToggle';
 import { cn } from '@/lib/utils';
 import {
