@@ -1,7 +1,7 @@
 import { cn } from '@/lib/utils';
 
 type Props = {
-  as?: 'h1' | 'h2' | 'h3';
+  as?: 'h1' | 'h2' | 'h3' | 'h4';
   children?: React.ReactNode;
 } & React.HTMLAttributes<HTMLHeadingElement>;
 
@@ -22,6 +22,9 @@ const Heading = ({ as = 'h1', className, children }: Props) => {
 
   if (as === 'h3')
     return <h3 className={cn(baseStyle, 'text-xl', className)}>{children}</h3>;
+
+  if (as === 'h4')
+    return <h4 className={cn(baseStyle, 'text-lg', className)}>{children}</h4>;
 };
 
 export default Heading;

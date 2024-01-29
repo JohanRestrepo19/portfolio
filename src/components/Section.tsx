@@ -1,4 +1,5 @@
 import Heading from '@/components/Heading';
+import { cn } from '@/lib/utils';
 
 export const SectionHeading = ({
   children,
@@ -15,8 +16,8 @@ export const SectionHeading = ({
   );
 };
 
-const Section = ({ children }: React.ComponentProps<'section'>) => {
-  return <section className="mb-6">{children}</section>;
+const Section = ({ children, className }: React.ComponentProps<'section'>) => {
+  return <section className={cn("mb-6", className)}>{children}</section>;
 };
 
 export default Section;

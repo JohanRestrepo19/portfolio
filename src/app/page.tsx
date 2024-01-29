@@ -1,8 +1,26 @@
+import NextLink, { type LinkProps } from 'next/link';
+import BioSection from '@/components/Bio';
 import Container from '@/components/Container';
 import Heading from '@/components/Heading';
 import Paragraph from '@/components/Paragraph';
 import Section, { SectionHeading } from '@/components/Section';
+import { Button } from '@/components/ui/button';
+import { Linkedin, Github } from 'lucide-react';
 
+const ContactItem = ({
+  href,
+  children,
+}: { children?: React.ReactNode } & LinkProps) => {
+  return (
+    <li>
+      <NextLink href={href} target="_blank">
+        <Button variant="ghost" className="font-bold text-primary">
+          {children}
+        </Button>
+      </NextLink>
+    </li>
+  );
+};
 
 export default function Home() {
   return (
@@ -33,14 +51,63 @@ export default function Home() {
               culpa et culpa duis.
             </Paragraph>
           </Section>
+
           <Section>
             <SectionHeading>Bio</SectionHeading>
+            <div className="flex flex-col gap-y-6">
+              <BioSection year="2023" title="Systems and Computer Engineering">
+                Lorem ipsum dolor sit amet, qui minim labore adipisicing minim
+                sint cillum sint consectetur cupidatat. Lorem ipsum dolor sit
+                amet, qui minim labore adipisicing minim sint cillum sint
+                consectetur cupidatat.
+              </BioSection>
+              <BioSection year="2023" title="Systems and Computer Engineering">
+                Lorem ipsum dolor sit amet, qui minim labore adipisicing minim
+                sint cillum sint consectetur cupidatat. Lorem ipsum dolor sit
+                amet, qui minim labore adipisicing minim sint cillum sint
+                consectetur cupidatat.
+              </BioSection>
+              <BioSection year="2023" title="Systems and Computer Engineering">
+                Lorem ipsum dolor sit amet, qui minim labore adipisicing minim
+                sint cillum sint consectetur cupidatat. Lorem ipsum dolor sit
+                amet, qui minim labore adipisicing minim sint cillum sint
+                consectetur cupidatat.
+              </BioSection>
+              <BioSection year="2023" title="Systems and Computer Engineering">
+                Lorem ipsum dolor sit amet, qui minim labore adipisicing minim
+                sint cillum sint consectetur cupidatat. Lorem ipsum dolor sit
+                amet, qui minim labore adipisicing minim sint cillum sint
+                consectetur cupidatat.
+              </BioSection>
+            </div>
           </Section>
+
           <Section>
-            <SectionHeading>About me</SectionHeading>
+            <SectionHeading>I ♥</SectionHeading>
+            <Paragraph>
+              <NextLink
+                href="https://github.com/JohanRestrepo19/nvim"
+                target="_blank"
+                className="visited:text-secondary hover:underline"
+              >
+                Neovim (btw)
+              </NextLink>
+              , Music, Video Games, Learning Japanese and Playing Soccer
+            </Paragraph>
           </Section>
+
           <Section>
             <SectionHeading>On the web</SectionHeading>
+            <ul>
+              <ContactItem href="https://github.com/JohanRestrepo19">
+                <Github className="mr-2 h-4 w-4" />
+                @JohanRestrepo19
+              </ContactItem>
+              <ContactItem href="https://www.linkedin.com/in/johanrestrepo19/">
+                <Linkedin className="mr-2 h-4 w-4" />
+                @JohanRestrepo19
+              </ContactItem>
+            </ul>
           </Section>
         </article>
       </Container>
