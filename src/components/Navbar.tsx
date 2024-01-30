@@ -52,7 +52,6 @@ export const Navbar = ({ ...props }: Props) => {
           <h1>
             <NextLink href="/">
               <span className="font-bold tracking-tighter">
-                {/*TODO: icon*/}
                 Johan Restrepo
               </span>
             </NextLink>
@@ -63,9 +62,8 @@ export const Navbar = ({ ...props }: Props) => {
         <div className="hidden w-auto min-w-96 gap-2 md:flex md:flex-grow md:items-center">
           <LinkItem href="/projects">Projects</LinkItem>
 
-          {/* TODO: change link to source repo */}
           <LinkItem
-            href="https://github.com/JohanRestrepo19"
+            href="https://github.com/JohanRestrepo19/portfolio"
             className="inline-flex items-center gap-1"
           >
             <Github size={'1.2rem'} />
@@ -88,8 +86,7 @@ export const Navbar = ({ ...props }: Props) => {
                   <DropdownMenuItem>Projects</DropdownMenuItem>
                 </NextLink>
 
-                {/* TODO: change link to source repo */}
-                <NextLink href="https://github.com/JohanRestrepo19">
+                <NextLink href="https://github.com/JohanRestrepo19/portfolio">
                   <DropdownMenuItem>Source</DropdownMenuItem>
                 </NextLink>
               </DropdownMenuContent>
