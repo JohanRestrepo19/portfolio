@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils';
 import { m1PlusRounded } from '@/components/fonts';
 import { Navbar } from '@/components/Navbar';
 import { ThemeProvider } from '@/components/ThemeProvider';
-import  Container from '@/components/Container';
+import Container from '@/components/Container';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {

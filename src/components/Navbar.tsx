@@ -51,9 +51,7 @@ export const Navbar = ({ ...props }: Props) => {
         <div className="mr-5">
           <h1>
             <NextLink href="/">
-              <span className="font-bold tracking-tighter">
-                Johan Restrepo
-              </span>
+              <span className="font-bold tracking-tighter">Johan Restrepo</span>
             </NextLink>
           </h1>
         </div>

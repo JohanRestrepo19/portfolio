@@ -4,5 +4,5 @@ export const m1PlusRounded = M_PLUS_Rounded_1c({
   subsets: ['latin'],
   weight: ['400', '700'],
   display: 'swap',
-  variable: '--font-mplus'
+  variable: '--font-mplus',
 });

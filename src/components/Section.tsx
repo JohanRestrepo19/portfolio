@@ -17,7 +17,7 @@ export const SectionHeading = ({
 };
 
 const Section = ({ children, className }: React.ComponentProps<'section'>) => {
-  return <section className={cn("mb-6", className)}>{children}</section>;
+  return <section className={cn('mb-6', className)}>{children}</section>;
 };
 
 export default Section;
