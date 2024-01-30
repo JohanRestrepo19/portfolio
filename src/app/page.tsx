@@ -1,11 +1,13 @@
 import NextLink, { type LinkProps } from 'next/link';
+import { Linkedin, Github } from 'lucide-react';
+
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 import BioSection from '@/components/Bio';
 import Container from '@/components/Container';
 import Heading from '@/components/Heading';
 import Paragraph from '@/components/Paragraph';
 import Section, { SectionHeading } from '@/components/Section';
 import { Button } from '@/components/ui/button';
-import { Linkedin, Github } from 'lucide-react';
 
 const ContactItem = ({
   href,
@@ -26,11 +28,17 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <Container>
-        <div className="mb-6 text-center">
-          <Heading>Johan Restrepo</Heading>
-          <Heading as="h2">
-            Systems and Computer Engineer & Software Developer
-          </Heading>
+        <div className="mb-6 flex flex-col items-center gap-2 text-center">
+          <Avatar className="h-24 w-24">
+            <AvatarImage src="/avatar.png" />
+            <AvatarFallback>Johan Restrepo</AvatarFallback>
+          </Avatar>
+          <div>
+            <Heading>Johan Restrepo</Heading>
+            <Heading as="h3">
+              Systems and Computer Engineer & Software Developer
+            </Heading>
+          </div>
         </div>
 
         <article>

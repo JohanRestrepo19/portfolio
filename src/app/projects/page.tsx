@@ -1,9 +1,15 @@
 import Container from '@/components/Container';
+import Heading from '@/components/Heading';
+
 
 export default function Works() {
   return (
     <Container>
-      <h1>Projects page</h1>
+      <Heading as='h3'>
+        Projects
+      </Heading>
+      <div>
+      </div>
     </Container>
   );
 }
