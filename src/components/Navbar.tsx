@@ -1,6 +1,6 @@
 'use client';
 
-import NextLink, { LinkProps } from 'next/link';
+import Link, { LinkProps } from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Github, Menu } from 'lucide-react';
 
@@ -23,7 +23,7 @@ type LinkItemProps = {
 const LinkItem = ({ className, children, ...props }: LinkItemProps) => {
   const path = usePathname();
   return (
-    <NextLink
+    <Link
       {...props}
       className={cn(
         'p-2 underline-offset-4 hover:underline',
@@ -34,7 +34,7 @@ const LinkItem = ({ className, children, ...props }: LinkItemProps) => {
       )}
     >
       {children}
-    </NextLink>
+    </Link>
   );
 };
 
@@ -50,9 +50,9 @@ export const Navbar = ({ ...props }: Props) => {
         {/* Logo and name */}
         <div className="mr-5">
           <h1>
-            <NextLink href="/">
+            <Link href="/">
               <span className="font-bold tracking-tighter">Johan Restrepo</span>
-            </NextLink>
+            </Link>
           </h1>
         </div>
 
@@ -80,13 +80,13 @@ export const Navbar = ({ ...props }: Props) => {
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent>
-                <NextLink href="/projects">
+                <Link href="/projects">
                   <DropdownMenuItem>Projects</DropdownMenuItem>
-                </NextLink>
+                </Link>
 
-                <NextLink href="https://github.com/JohanRestrepo19/portfolio">
+                <Link href="https://github.com/JohanRestrepo19/portfolio">
                   <DropdownMenuItem>Source</DropdownMenuItem>
-                </NextLink>
+                </Link>
               </DropdownMenuContent>
             </DropdownMenu>
           </div>

@@ -1,4 +1,4 @@
-import NextLink, { type LinkProps } from 'next/link';
+import Link, { type LinkProps } from 'next/link';
 import { Linkedin, Github } from 'lucide-react';
 
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
@@ -15,11 +15,11 @@ const ContactItem = ({
 }: { children?: React.ReactNode } & LinkProps) => {
   return (
     <li>
-      <NextLink href={href} target="_blank">
+      <Link href={href} target="_blank">
         <Button variant="ghost" className="font-bold text-primary">
           {children}
         </Button>
-      </NextLink>
+      </Link>
     </li>
   );
 };
@@ -93,13 +93,13 @@ export default function Home() {
           <Section>
             <SectionHeading>I ♥</SectionHeading>
             <Paragraph>
-              <NextLink
+              <Link
                 href="https://github.com/JohanRestrepo19/nvim"
                 target="_blank"
                 className="visited:text-secondary hover:underline"
               >
                 Neovim (btw)
-              </NextLink>
+              </Link>
               , Music, Video Games, Learning Japanese and Playing Soccer
             </Paragraph>
           </Section>
