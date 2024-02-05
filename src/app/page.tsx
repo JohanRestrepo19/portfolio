@@ -96,7 +96,7 @@ export default function Home() {
               <Link
                 href="https://github.com/JohanRestrepo19/nvim"
                 target="_blank"
-                className="visited:text-secondary hover:underline"
+                className="hover:text-secondary hover:underline"
               >
                 Neovim (btw)
               </Link>

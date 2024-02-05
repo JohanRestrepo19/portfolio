@@ -1,6 +1,7 @@
 import Container from '@/components/Container';
 import Heading from '@/components/Heading';
 import ProjectItem from '@/components/Projects';
+import { allEnProjects } from '@/i18n/en'; // TODO: Replace for corresponding user language.
 
 export default function Projects() {
   return (
@@ -9,8 +10,9 @@ export default function Projects() {
         Projects
       </Heading>
       <div className="grid gap-6 md:grid-cols-2">
-        <ProjectItem title='turistriada' description='xd' href='/projects/turistriada' />
-        <ProjectItem title='turistriada-landing' description='xd' href='/projects/turistriada-landing' />
+        {allEnProjects.map(project => (
+          <ProjectItem key={project.slug} project={project} />
+        ))}
       </div>
     </Container>
   );
