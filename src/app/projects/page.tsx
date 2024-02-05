@@ -1,7 +1,6 @@
 import Container from '@/components/Container';
 import Heading from '@/components/Heading';
 import ProjectItem from '@/components/Projects';
-import { allProjects } from 'contentlayer/generated';
 
 export default function Projects() {
   return (
@@ -10,9 +9,8 @@ export default function Projects() {
         Projects
       </Heading>
       <div className="grid gap-6 md:grid-cols-2">
-        {allProjects.map(project => (
-          <ProjectItem key={project._id} project={project} />
-        ))}
+        <ProjectItem title='turistriada' description='xd' href='/projects/turistriada' />
+        <ProjectItem title='turistriada-landing' description='xd' href='/projects/turistriada-landing' />
       </div>
     </Container>
   );

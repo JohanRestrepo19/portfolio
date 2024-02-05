@@ -1,27 +1,35 @@
-import Image, { ImageProps } from 'next/image';
-import Link from 'next/link';
+import Image from 'next/image';
+import Link, { LinkProps } from 'next/link';
 import Heading from '@/components/Heading';
-import defaultImage from '../../public/placeholder.svg';
-import { type Project } from 'contentlayer/generated';
 
-type Props = {
-  project: Project;
-  // TODO: Make src required
-  src?: Pick<ImageProps, 'src'>;
-};
+type ProjectItemProps = {
+  src?: string;
+  title: string;
+  description: string;
+} & LinkProps;
 
-const ProjectItem = ({ project, src }: Props) => {
-  const image = src || defaultImage;
-  const { title, body, url } = project;
-
+const ProjectItem = async ({
+  src,
+  href,
+  title,
+  description,
+}: ProjectItemProps) => {
   return (
     <div className="w-full text-center">
-      <Link href={url}>
-        <Image src={image} alt={title} priority />
+      <Link href={href}>
+        <Image
+          src={src || '/placeholder.svg'}
+          alt={title}
+          width={720}
+          height={400}
+          priority
+        />
+
         <Heading as="h4" className="mt-2 capitalize tracking-tight">
           {title}
         </Heading>
-        <p className="text-sm">{body.raw}</p>
+
+        <p className="text-sm">{description}</p>
       </Link>
     </div>
   );
