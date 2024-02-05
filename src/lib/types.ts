@@ -2,7 +2,8 @@ export type Project = {
   title: string
   description: string
   slug: string
-  images: string[]
+  thumbnail: string,
+  contentImages?: string[]
   tags: {
     stack: string
     source?: string
