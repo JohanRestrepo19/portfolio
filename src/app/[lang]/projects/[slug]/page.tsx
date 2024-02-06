@@ -32,7 +32,6 @@ export default function ProjectPage({ params }: PageProps) {
   const project = allEnProjects.find(project => project.slug === params.slug);
 
   if (!project) return notFound();
-  console.log({ project });
 
   return (
     <Container>

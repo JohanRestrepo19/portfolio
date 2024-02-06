@@ -1,5 +1,7 @@
 'use client';
 
+// TODO: Use correct languages
+
 import Link, { LinkProps } from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Github, Menu } from 'lucide-react';
