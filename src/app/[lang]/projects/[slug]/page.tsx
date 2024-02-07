@@ -2,24 +2,29 @@ import { type Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
+import { type Locale, getProjects } from '@/i18n';
 import Container from '@/components/Container';
 import Heading from '@/components/Heading';
 import Paragraph from '@/components/Paragraph';
 import { Badge } from '@/components/ui/badge';
-import { allEnProjects } from '@/i18n/en'; // TODO: Replace for corresponding user language.
 
 type PageProps = {
-  params: { slug: string };
+  params: {
+    lang: Locale;
+    slug: string;
+  };
 };
 
-export function generateStaticParams() {
-  return allEnProjects.map(project => ({
+export function generateStaticParams({ params }: PageProps) {
+  const allProjects = getProjects(params.lang)
+  return allProjects.map(project => ({
     slug: project.slug,
   }));
 }
 
 export function generateMetadata({ params }: PageProps): Metadata {
-  const project = allEnProjects.find(project => project.slug === params.slug);
+  const allProjects = getProjects(params.lang)
+  const project = allProjects.find(project => project.slug === params.slug);
 
   if (!project) throw new Error(`Project not found for slug: ${params.slug}`);
 
@@ -29,7 +34,8 @@ export function generateMetadata({ params }: PageProps): Metadata {
 }
 
 export default function ProjectPage({ params }: PageProps) {
-  const project = allEnProjects.find(project => project.slug === params.slug);
+  const allProjects = getProjects(params.lang)
+  const project = allProjects.find(project => project.slug === params.slug);
 
   if (!project) return notFound();
 
