@@ -3,7 +3,7 @@
 // TODO: Use correct languages
 
 import Link, { LinkProps } from 'next/link';
-import { usePathname } from 'next/navigation';
+import { useParams, usePathname } from 'next/navigation';
 import { Github, Menu } from 'lucide-react';
 
 import Container from '@/components/Container';
@@ -16,6 +16,7 @@ import {
   DropdownMenuItem,
 } from '@/components/ui/dropdown-menu';
 import { Button } from '@/components/ui/button';
+import { Locale, getDictionary } from '@/i18n';
 
 type LinkItemProps = {
   children?: React.ReactNode;
@@ -44,6 +45,9 @@ const LinkItem = ({ className, children, ...props }: LinkItemProps) => {
 type Props = React.ComponentProps<'nav'>;
 
 export const Navbar = ({ ...props }: Props) => {
+  const params = useParams<{lang: Locale}>()
+  const dictionary = getDictionary(params.lang)
+
   return (
     <nav
       {...props}
@@ -61,14 +65,14 @@ export const Navbar = ({ ...props }: Props) => {
 
         {/* Navlinks */}
         <div className="hidden w-auto min-w-96 gap-2 md:flex md:flex-grow md:items-center">
-          <LinkItem href="/projects">Projects</LinkItem>
+          <LinkItem href="/projects">{dictionary.navbar.projects}</LinkItem>
 
           <LinkItem
             href="https://github.com/JohanRestrepo19/portfolio"
             className="inline-flex items-center gap-1"
           >
             <Github size={'1.2rem'} />
-            Source
+            {dictionary.navbar.source}
           </LinkItem>
         </div>
 
@@ -84,11 +88,11 @@ export const Navbar = ({ ...props }: Props) => {
               </DropdownMenuTrigger>
               <DropdownMenuContent>
                 <Link href="/projects">
-                  <DropdownMenuItem>Projects</DropdownMenuItem>
+                  <DropdownMenuItem>{dictionary.navbar.projects}</DropdownMenuItem>
                 </Link>
 
                 <Link href="https://github.com/JohanRestrepo19/portfolio">
-                  <DropdownMenuItem>Source</DropdownMenuItem>
+                  <DropdownMenuItem>{dictionary.navbar.source}</DropdownMenuItem>
                 </Link>
               </DropdownMenuContent>
             </DropdownMenu>
