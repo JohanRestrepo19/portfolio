@@ -16,14 +16,32 @@ export type Tags = {
 
 // Dicitonary types
 export type Dictionary = {
+  layout: Layout;
+  pages: Pages;
+};
+
+export type Layout = {
   navbar: Navbar;
-  sections: Sections;
   footer: string;
 };
 
 export type Navbar = {
   projects: string;
   source: string;
+};
+
+export type Pages = {
+  home: Home;
+  projects: Projects;
+};
+
+export type Home = {
+  heading: Heading;
+  sections: Sections;
+};
+
+export type Heading = {
+  role: string;
 };
 
 export type Sections = {
@@ -56,4 +74,8 @@ export type Profile = {
 
 export type Web = {
   title: string;
+};
+
+export type Projects = {
+  heading: string;
 };

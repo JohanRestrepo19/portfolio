@@ -33,7 +33,9 @@ export async function generateStaticParams() {
 type PageProps = { params: { lang: Locale } };
 
 export default function Home({ params }: PageProps) {
-  const dictionary = getDictionary(params.lang);
+  const {
+    pages: { home },
+  } = getDictionary(params.lang);
 
   return (
     <main className="min-h-screen">
@@ -46,21 +48,21 @@ export default function Home({ params }: PageProps) {
           <div>
             <Heading>Johan Restrepo</Heading>
             <Heading as="h3">
-              Systems and Computer Engineer & Software Developer
+              {home.heading.role}
             </Heading>
           </div>
         </div>
 
         <article>
           <Section>
-            <SectionHeading>{dictionary.sections.profile.title}</SectionHeading>
-            <Paragraph>{dictionary.sections.profile.description}</Paragraph>
+            <SectionHeading>{home.sections.profile.title}</SectionHeading>
+            <Paragraph>{home.sections.profile.description}</Paragraph>
           </Section>
 
           <Section>
-            <SectionHeading>{dictionary.sections.bio.title}</SectionHeading>
+            <SectionHeading>{home.sections.bio.title}</SectionHeading>
             <div className="flex flex-col gap-y-6">
-              {dictionary.sections.bio.bioItems.map(item => (
+              {home.sections.bio.bioItems.map(item => (
                 <BioSection
                   key={item.title}
                   title={item.title}
@@ -73,9 +75,7 @@ export default function Home({ params }: PageProps) {
           </Section>
 
           <Section>
-            <SectionHeading>
-              {dictionary.sections.likes.title} ♥
-            </SectionHeading>
+            <SectionHeading>{home.sections.likes.title} ♥</SectionHeading>
             <Paragraph>
               <Link
                 href="https://github.com/JohanRestrepo19/nvim"
@@ -84,12 +84,12 @@ export default function Home({ params }: PageProps) {
               >
                 Neovim (btw)
               </Link>
-              , {dictionary.sections.likes.content}
+              , {home.sections.likes.content}
             </Paragraph>
           </Section>
 
           <Section>
-            <SectionHeading>{dictionary.sections.web.title}</SectionHeading>
+            <SectionHeading>{home.sections.web.title}</SectionHeading>
             <ul>
               <ContactItem href="https://github.com/JohanRestrepo19">
                 <Github className="mr-2 h-4 w-4" />

@@ -1,16 +1,24 @@
 import Container from '@/components/Container';
 import Heading from '@/components/Heading';
 import ProjectItem from '@/components/Projects';
-import { allEnProjects } from '@/i18n/en'; // TODO: Replace for corresponding user language.
+import { Locale, getProjects } from '@/i18n';
 
-export default function Projects() {
+type Props = {
+  params: {
+    lang: Locale
+  }
+}
+
+export default function Projects({params}: Props) {
+  const allProjects = getProjects(params.lang)
+
   return (
     <Container>
       <Heading as="h3" className="mb-4">
         Projects
       </Heading>
       <div className="grid gap-6 md:grid-cols-2">
-        {allEnProjects.map(project => (
+        {allProjects.map(project => (
           <ProjectItem key={project.slug} project={project} />
         ))}
       </div>

@@ -46,7 +46,7 @@ type Props = React.ComponentProps<'nav'>;
 
 export const Navbar = ({ ...props }: Props) => {
   const params = useParams<{lang: Locale}>()
-  const dictionary = getDictionary(params.lang)
+  const {layout} = getDictionary(params.lang)
 
   return (
     <nav
@@ -65,14 +65,14 @@ export const Navbar = ({ ...props }: Props) => {
 
         {/* Navlinks */}
         <div className="hidden w-auto min-w-96 gap-2 md:flex md:flex-grow md:items-center">
-          <LinkItem href="/projects">{dictionary.navbar.projects}</LinkItem>
+          <LinkItem href="/projects">{layout.navbar.projects}</LinkItem>
 
           <LinkItem
             href="https://github.com/JohanRestrepo19/portfolio"
             className="inline-flex items-center gap-1"
           >
             <Github size={'1.2rem'} />
-            {dictionary.navbar.source}
+            {layout.navbar.source}
           </LinkItem>
         </div>
 
@@ -88,11 +88,11 @@ export const Navbar = ({ ...props }: Props) => {
               </DropdownMenuTrigger>
               <DropdownMenuContent>
                 <Link href="/projects">
-                  <DropdownMenuItem>{dictionary.navbar.projects}</DropdownMenuItem>
+                  <DropdownMenuItem>{layout.navbar.projects}</DropdownMenuItem>
                 </Link>
 
                 <Link href="https://github.com/JohanRestrepo19/portfolio">
-                  <DropdownMenuItem>{dictionary.navbar.source}</DropdownMenuItem>
+                  <DropdownMenuItem>{layout.navbar.source}</DropdownMenuItem>
                 </Link>
               </DropdownMenuContent>
             </DropdownMenu>
