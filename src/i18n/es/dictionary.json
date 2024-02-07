@@ -1,0 +1,30 @@
+{
+  "navbar": {
+    "projects": "",
+    "source": ""
+  },
+  "sections": {
+    "profile": {
+      "title": "",
+      "content": ""
+    },
+    "bio": {
+      "title": "",
+      "items": [
+        {
+          "title": "",
+          "description": "",
+          "year": ""
+        }
+      ]
+    },
+    "likes": {
+      "title": "",
+      "content": ""
+    },
+    "web": {
+      "title": ""
+    }
+  },
+  "footer": ""
+}

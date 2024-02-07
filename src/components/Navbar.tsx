@@ -22,6 +22,7 @@ type LinkItemProps = {
   className?: string;
 } & LinkProps;
 
+//TODO: Set correct NavLinks.
 const LinkItem = ({ className, children, ...props }: LinkItemProps) => {
   const path = usePathname();
   return (
