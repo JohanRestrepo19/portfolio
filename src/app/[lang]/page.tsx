@@ -1,7 +1,7 @@
 import Link, { type LinkProps } from 'next/link';
 import { Linkedin, Github } from 'lucide-react';
 
-import { i18n } from '@/i18n';
+import { type Locale, getDictionary, i18n } from '@/i18n';
 
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 import BioSection from '@/components/Bio';
@@ -30,9 +30,11 @@ export async function generateStaticParams() {
   return i18n.locales.map(locale => ({ lang: locale }));
 }
 
-type PageProps = { params: { lang: string } };
+type PageProps = { params: { lang: Locale } };
 
-export default function Home({ }: PageProps) {
+export default function Home({ params }: PageProps) {
+  const dictionary = getDictionary(params.lang);
+
   return (
     <main className="min-h-screen">
       <Container>
@@ -51,55 +53,29 @@ export default function Home({ }: PageProps) {
 
         <article>
           <Section>
-            <SectionHeading>Profile</SectionHeading>
-            <Paragraph>
-              Lorem ipsum dolor sit amet, officia excepteur ex fugiat
-              reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit
-              ex esse exercitation amet. Nisi anim cupidatat excepteur officia.
-              Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet
-              voluptate voluptate dolor minim nulla est proident. Nostrud
-              officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex
-              occaecat reprehenderit commodo officia dolor Lorem duis laboris
-              cupidatat officia voluptate. Culpa proident adipisicing id nulla
-              nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua
-              reprehenderit commodo ex non excepteur duis sunt velit enim.
-              Voluptate laboris sint cupidatat ullamco ut ea consectetur et est
-              culpa et culpa duis.
-            </Paragraph>
+            <SectionHeading>{dictionary.sections.profile.title}</SectionHeading>
+            <Paragraph>{dictionary.sections.profile.description}</Paragraph>
           </Section>
 
           <Section>
-            <SectionHeading>Bio</SectionHeading>
+            <SectionHeading>{dictionary.sections.bio.title}</SectionHeading>
             <div className="flex flex-col gap-y-6">
-              <BioSection year="2023" title="Systems and Computer Engineering">
-                Lorem ipsum dolor sit amet, qui minim labore adipisicing minim
-                sint cillum sint consectetur cupidatat. Lorem ipsum dolor sit
-                amet, qui minim labore adipisicing minim sint cillum sint
-                consectetur cupidatat.
-              </BioSection>
-              <BioSection year="2023" title="Systems and Computer Engineering">
-                Lorem ipsum dolor sit amet, qui minim labore adipisicing minim
-                sint cillum sint consectetur cupidatat. Lorem ipsum dolor sit
-                amet, qui minim labore adipisicing minim sint cillum sint
-                consectetur cupidatat.
-              </BioSection>
-              <BioSection year="2023" title="Systems and Computer Engineering">
-                Lorem ipsum dolor sit amet, qui minim labore adipisicing minim
-                sint cillum sint consectetur cupidatat. Lorem ipsum dolor sit
-                amet, qui minim labore adipisicing minim sint cillum sint
-                consectetur cupidatat.
-              </BioSection>
-              <BioSection year="2023" title="Systems and Computer Engineering">
-                Lorem ipsum dolor sit amet, qui minim labore adipisicing minim
-                sint cillum sint consectetur cupidatat. Lorem ipsum dolor sit
-                amet, qui minim labore adipisicing minim sint cillum sint
-                consectetur cupidatat.
-              </BioSection>
+              {dictionary.sections.bio.bioItems.map(item => (
+                <BioSection
+                  key={item.title}
+                  title={item.title}
+                  year={item.year}
+                >
+                  {item.description}
+                </BioSection>
+              ))}
             </div>
           </Section>
 
           <Section>
-            <SectionHeading>I ♥</SectionHeading>
+            <SectionHeading>
+              {dictionary.sections.likes.title} ♥
+            </SectionHeading>
             <Paragraph>
               <Link
                 href="https://github.com/JohanRestrepo19/nvim"
@@ -108,12 +84,12 @@ export default function Home({ }: PageProps) {
               >
                 Neovim (btw)
               </Link>
-              , Music, Video Games, Learning Japanese and Playing Soccer
+              , {dictionary.sections.likes.content}
             </Paragraph>
           </Section>
 
           <Section>
-            <SectionHeading>On the web</SectionHeading>
+            <SectionHeading>{dictionary.sections.web.title}</SectionHeading>
             <ul>
               <ContactItem href="https://github.com/JohanRestrepo19">
                 <Github className="mr-2 h-4 w-4" />
