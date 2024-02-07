@@ -1,21 +1,24 @@
 import Container from '@/components/Container';
 import Heading from '@/components/Heading';
 import ProjectItem from '@/components/Projects';
-import { Locale, getProjects } from '@/i18n';
+import { type Locale, getDictionary, getProjects } from '@/i18n';
 
 type Props = {
   params: {
-    lang: Locale
-  }
-}
+    lang: Locale;
+  };
+};
 
-export default function Projects({params}: Props) {
-  const allProjects = getProjects(params.lang)
+export default function Projects({ params }: Props) {
+  const allProjects = getProjects(params.lang);
+  const {
+    pages: { projects },
+  } = getDictionary(params.lang);
 
   return (
     <Container>
       <Heading as="h3" className="mb-4">
-        Projects
+        {projects.heading}
       </Heading>
       <div className="grid gap-6 md:grid-cols-2">
         {allProjects.map(project => (

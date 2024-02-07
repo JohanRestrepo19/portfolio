@@ -16,7 +16,7 @@ import {
   DropdownMenuItem,
 } from '@/components/ui/dropdown-menu';
 import { Button } from '@/components/ui/button';
-import { Locale, getDictionary } from '@/i18n';
+import { type Locale, getDictionary } from '@/i18n';
 
 type LinkItemProps = {
   children?: React.ReactNode;
