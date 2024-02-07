@@ -1,12 +1,12 @@
 {
-  "title": "Turistriada",
-  "description": "Descripcion de turistriad en español Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
-  "slug": "turistriada",
-  "thumbnail": "/placeholder.svg",
-  "contentImages": ["/placeholder.svg", "/placeholder2.svg"],
-  "tags": {
-    "stack": "React, Tailwind Css, Firabase, Vite",
-    "source": "https://github.com/JohanRestrepo19/turistriada-frontend/",
-    "website": "https://turistriada.web.app/"
-  }
+    "title": "Turistriada",
+    "description": "Descripcion de turistriad en español Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
+    "slug": "turistriada",
+    "thumbnail": "/placeholder.svg",
+    "contentImages": ["/placeholder.svg", "/placeholder2.svg"],
+    "tags": {
+        "stack": "React, Tailwind Css, Firabase, Vite",
+        "source": "https://github.com/JohanRestrepo19/turistriada-frontend/",
+        "website": "https://turistriada.web.app/"
+    }
 }

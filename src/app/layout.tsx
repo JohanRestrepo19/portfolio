@@ -9,37 +9,37 @@ import Container from '@/components/Container';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: {
-    template: '%s | Johan Restrepo',
-    default: 'Johan Restrepo',
-  },
-  description: 'Personal portfolio',
+    title: {
+        template: '%s | Johan Restrepo',
+        default: 'Johan Restrepo',
+    },
+    description: 'Personal portfolio',
 };
 
 export default function RootLayout({
-  children,
+    children,
 }: Readonly<{
-  children: React.ReactNode;
+    children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en" suppressHydrationWarning>
-      <body
-        className={cn(
-          m1PlusRounded.variable,
-          'min-h-screen bg-background font-sans antialiased',
-        )}
-      >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <Navbar />
-          <Container>{children}</Container>
-          <Footer />
-        </ThemeProvider>
-      </body>
-    </html>
-  );
+    return (
+        <html lang="en" suppressHydrationWarning>
+            <body
+                className={cn(
+                    m1PlusRounded.variable,
+                    'min-h-screen bg-background font-sans antialiased',
+                )}
+            >
+                <ThemeProvider
+                    attribute="class"
+                    defaultTheme="system"
+                    enableSystem
+                    disableTransitionOnChange
+                >
+                    <Navbar />
+                    <Container>{children}</Container>
+                    <Footer />
+                </ThemeProvider>
+            </body>
+        </html>
+    );
 }
