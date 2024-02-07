@@ -47,9 +47,7 @@ export default function Home({ params }: PageProps) {
           </Avatar>
           <div>
             <Heading>Johan Restrepo</Heading>
-            <Heading as="h3">
-              {home.heading.role}
-            </Heading>
+            <Heading as="h3">{home.heading.role}</Heading>
           </div>
         </div>
 

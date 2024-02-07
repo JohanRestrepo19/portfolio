@@ -45,8 +45,8 @@ const LinkItem = ({ className, children, ...props }: LinkItemProps) => {
 type Props = React.ComponentProps<'nav'>;
 
 export const Navbar = ({ ...props }: Props) => {
-  const params = useParams<{lang: Locale}>()
-  const {layout} = getDictionary(params.lang)
+  const params = useParams<{ lang: Locale }>();
+  const { layout } = getDictionary(params.lang);
 
   return (
     <nav

@@ -16,14 +16,14 @@ type PageProps = {
 };
 
 export function generateStaticParams({ params }: PageProps) {
-  const allProjects = getProjects(params.lang)
+  const allProjects = getProjects(params.lang);
   return allProjects.map(project => ({
     slug: project.slug,
   }));
 }
 
 export function generateMetadata({ params }: PageProps): Metadata {
-  const allProjects = getProjects(params.lang)
+  const allProjects = getProjects(params.lang);
   const project = allProjects.find(project => project.slug === params.slug);
 
   if (!project) throw new Error(`Project not found for slug: ${params.slug}`);
@@ -34,7 +34,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
 }
 
 export default function ProjectPage({ params }: PageProps) {
-  const allProjects = getProjects(params.lang)
+  const allProjects = getProjects(params.lang);
   const project = allProjects.find(project => project.slug === params.slug);
 
   if (!project) return notFound();

@@ -11,7 +11,7 @@ import Footer from '@/components/Footer';
 export const metadata: Metadata = {
   title: {
     template: '%s | Johan Restrepo',
-    default: 'Johan Restrepo'
+    default: 'Johan Restrepo',
   },
   description: 'Personal portfolio',
 };
