@@ -37,6 +37,13 @@
         },
         "projects": {
             "heading": "Proyectos"
+        },
+        "project": {
+            "tags": {
+                "stack": "Stack",
+                "source": "Código",
+                "website": "Sitio Web"
+            }
         }
     }
 }

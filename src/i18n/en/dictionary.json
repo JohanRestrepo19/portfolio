@@ -37,6 +37,13 @@
         },
         "projects": {
             "heading": "Projects"
+        },
+        "project": {
+            "tags": {
+                "stack": "Stack",
+                "source": "Source",
+                "website": "Website"
+            }
         }
     }
 }

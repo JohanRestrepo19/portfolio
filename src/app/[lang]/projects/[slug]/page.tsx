@@ -2,7 +2,7 @@ import { type Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import { type Locale, getProjects } from '@/i18n';
+import { type Locale, getProjects, getDictionary } from '@/i18n';
 import Container from '@/components/Container';
 import Heading from '@/components/Heading';
 import Paragraph from '@/components/Paragraph';
@@ -35,6 +35,11 @@ export function generateMetadata({ params }: PageProps): Metadata {
 
 export default function ProjectPage({ params }: PageProps) {
     const allProjects = getProjects(params.lang);
+    const {
+        pages: {
+            project: { tags },
+        },
+    } = getDictionary(params.lang);
     const project = allProjects.find(project => project.slug === params.slug);
 
     if (!project) return notFound();
@@ -47,13 +52,13 @@ export default function ProjectPage({ params }: PageProps) {
             <Paragraph>{project.description}</Paragraph>
             <ul className="my-4 ml-4 break-words">
                 <li>
-                    <Badge className="mr-2 rounded-md">Stack</Badge>
+                    <Badge className="mr-2 rounded-md">{tags.stack}</Badge>
                     <span>{project.tags.stack}</span>
                 </li>
 
                 {project.tags.source && (
                     <li>
-                        <Badge className="mr-2 rounded-md">Source</Badge>
+                        <Badge className="mr-2 rounded-md">{tags.source}</Badge>
                         <Link href={project.tags.source}>
                             {project.tags.source}
                         </Link>
@@ -62,7 +67,9 @@ export default function ProjectPage({ params }: PageProps) {
 
                 {project.tags.website && (
                     <li>
-                        <Badge className="mr-2 rounded-md">Website</Badge>
+                        <Badge className="mr-2 rounded-md">
+                            {tags.website}
+                        </Badge>
                         <Link href={project.tags.website}>
                             {project.tags.website}
                         </Link>
