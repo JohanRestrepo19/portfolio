@@ -1,7 +1,5 @@
 'use client';
 
-// TODO: Use correct languages
-
 import Link, { LinkProps } from 'next/link';
 import { useParams, usePathname } from 'next/navigation';
 import { Github, Menu } from 'lucide-react';
@@ -23,7 +21,6 @@ type LinkItemProps = {
     className?: string;
 } & LinkProps;
 
-//TODO: Set correct NavLinks.
 const LinkItem = ({ className, children, ...props }: LinkItemProps) => {
     const path = usePathname();
     return (
@@ -48,6 +45,10 @@ export const Navbar = ({ ...props }: Props) => {
     const params = useParams<{ lang: Locale }>();
     const { layout } = getDictionary(params.lang);
 
+    function generateLinkPath(path: string) {
+        return `/${params.lang}${path}`;
+    }
+
     return (
         <nav
             {...props}
@@ -57,7 +58,7 @@ export const Navbar = ({ ...props }: Props) => {
                 {/* Logo and name */}
                 <div className="mr-5">
                     <h1>
-                        <Link href="/">
+                        <Link href={generateLinkPath('/')}>
                             <span className="font-bold tracking-tighter">
                                 Johan Restrepo
                             </span>
@@ -67,7 +68,7 @@ export const Navbar = ({ ...props }: Props) => {
 
                 {/* Navlinks */}
                 <div className="hidden w-auto min-w-96 gap-2 md:flex md:flex-grow md:items-center">
-                    <LinkItem href="/projects">
+                    <LinkItem href={generateLinkPath('/projects')}>
                         {layout.navbar.projects}
                     </LinkItem>
 
@@ -91,7 +92,7 @@ export const Navbar = ({ ...props }: Props) => {
                                 </Button>
                             </DropdownMenuTrigger>
                             <DropdownMenuContent>
-                                <Link href="/projects">
+                                <Link href={generateLinkPath('/projects')}>
                                     <DropdownMenuItem>
                                         {layout.navbar.projects}
                                     </DropdownMenuItem>
