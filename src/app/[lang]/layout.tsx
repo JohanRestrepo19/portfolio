@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import './globals.css';
+import '../globals.css';
 
 import { cn } from '@/lib/utils';
 import { m1PlusRounded } from '@/components/fonts';
@@ -7,6 +7,7 @@ import { Navbar } from '@/components/Navbar';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import Container from '@/components/Container';
 import Footer from '@/components/Footer';
+import { Locale } from '@/i18n';
 
 export const metadata: Metadata = {
     title: {
@@ -16,13 +17,16 @@ export const metadata: Metadata = {
     description: 'Personal portfolio',
 };
 
-export default function RootLayout({
-    children,
-}: Readonly<{
+type Props = Readonly<{
     children: React.ReactNode;
-}>) {
+    params: {
+        lang: Locale;
+    };
+}>;
+
+export default function RootLayout({ children, params }: Props) {
     return (
-        <html lang="en" suppressHydrationWarning>
+        <html lang={params.lang} suppressHydrationWarning>
             <body
                 className={cn(
                     m1PlusRounded.variable,
