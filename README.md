@@ -37,3 +37,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 -   [ ] Define portfolio content.
 -   [ ] Font got messed after adding framer motion.
+-   [ ] Define navbar skeleton in order to wait toggle theme button.

@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
 import { Moon, Sun } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 
 const ThemeToggle = () => {
@@ -27,20 +27,22 @@ const ThemeToggle = () => {
         );
 
     return (
-        <motion.div
-            key={resolvedTheme}
-            initial={{ rotate: -90 }}
-            animate={{ rotate: 0 }}
-            transition={{ duration: 0.2 }}
-        >
-            <Button
-                size="icon"
-                onClick={handleToggleTheme}
-                className="bg-[#c4a7e7] hover:bg-purple-700 dark:bg-[#f6c177] dark:hover:bg-orange-300"
+        <AnimatePresence initial={false} mode="wait">
+            <motion.div
+                key={resolvedTheme}
+                initial={{ rotateY: 90 }}
+                animate={{ rotateY: 0 }}
+                transition={{ duration: 0.3 }}
             >
-                {Icon}
-            </Button>
-        </motion.div>
+                <Button
+                    size="icon"
+                    onClick={handleToggleTheme}
+                    className="bg-[#c4a7e7] hover:bg-purple-700 dark:bg-[#f6c177] dark:hover:bg-orange-300"
+                >
+                    {Icon}
+                </Button>
+            </motion.div>
+        </AnimatePresence>
     );
 };
 
