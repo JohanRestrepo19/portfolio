@@ -1,86 +1,86 @@
 // Project types
 export type Project = {
-    title: string;
-    description: string;
-    slug: string;
-    thumbnail: string;
-    contentImages?: string[];
-    tags: Tags;
+  title: string;
+  description: string;
+  slug: string;
+  thumbnail: string;
+  contentImages?: string[];
+  tags: Tags;
 };
 
 export type Tags = {
-    stack: string;
-    source?: string;
-    website?: string;
+  stack: string;
+  source?: string;
+  website?: string;
 };
 
 // Dicitonary types
 export type Dictionary = {
-    layout: Layout;
-    pages: Pages;
+  layout: Layout;
+  pages: Pages;
 };
 
 export type Layout = {
-    navbar: Navbar;
-    footer: string;
+  navbar: Navbar;
+  footer: string;
 };
 
 export type Navbar = {
-    projects: string;
-    source: string;
+  projects: string;
+  source: string;
 };
 
 export type Pages = {
-    home: Home;
-    projects: Projects;
-    project: ProjectPage;
+  home: Home;
+  projects: Projects;
+  project: ProjectPage;
 };
 
 export type Home = {
-    heading: Heading;
-    sections: Sections;
+  heading: Heading;
+  sections: Sections;
 };
 
 export type Heading = {
-    role: string;
+  role: string;
 };
 
 export type Sections = {
-    profile: Profile;
-    bio: Bio;
-    likes: Likes;
-    web: Web;
+  profile: Profile;
+  bio: Bio;
+  likes: Likes;
+  web: Web;
 };
 
 export type Bio = {
-    title: string;
-    bioItems: BioItem[];
+  title: string;
+  bioItems: BioItem[];
 };
 
 export type BioItem = {
-    title: string;
-    description: string;
-    year: string;
+  title: string;
+  description: string;
+  year: string;
 };
 
 export type Likes = {
-    title: string;
-    content: string;
+  title: string;
+  content: string;
 };
 
 export type Profile = {
-    title: string;
-    description: string;
+  title: string;
+  description: string;
 };
 
 export type Web = {
-    title: string;
+  title: string;
 };
 
 export type ProjectPage = {
-    tags: Tags;
+  tags: Tags;
 };
 
 export type Projects = {
-    heading: string;
+  heading: string;
 };

@@ -1,12 +1,12 @@
 {
-    "title": "Turistriada Landing Page",
-    "description": "Descripciónd la landing page de turistriada en español Lorem para el Landing page ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
-    "slug": "turistriada-landing-page",
-    "thumbnail": "/placeholder2.svg",
-    "contentImages": [],
-    "tags": {
-        "stack": "React, Tailwind Css, Next.js, Creative Designs Guru",
-        "source": "https://github.com/JohanRestrepo19/turistriada",
-        "website": "https://turistriada.netlify.app/"
-    }
+  "title": "Turistriada Landing Page",
+  "description": "Descripciónd la landing page de turistriada en español Lorem para el Landing page ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
+  "slug": "turistriada-landing-page",
+  "thumbnail": "/placeholder2.svg",
+  "contentImages": [],
+  "tags": {
+    "stack": "React, Tailwind Css, Next.js, Creative Designs Guru",
+    "source": "https://github.com/JohanRestrepo19/turistriada",
+    "website": "https://turistriada.netlify.app/"
+  }
 }
