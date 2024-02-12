@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 import { cn } from '@/lib/utils';
-import { m1PlusRounded } from '@/components/fonts';
+import { m_plus_rounded } from '@/components/fonts';
 import { ThemeProvider } from '@/components/ThemeProvider';
 
 // TODO: Add custom favicon
@@ -21,7 +21,7 @@ export default function RootLayout({ children }: Props) {
     <html suppressHydrationWarning>
       <body
         className={cn(
-          m1PlusRounded.variable,
+          m_plus_rounded.variable,
           'min-h-screen bg-background font-sans antialiased',
         )}
       >
