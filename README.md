@@ -35,6 +35,27 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-- [ ] Define portfolio content.
-- [ ] Font got messed after adding framer motion.
+## TODO:
+
+- [ ] Finish implementing the animations:
+  - [ ] Toggle Theme Icon.
+  - [ ] Section Component.
+
+- [ ] Find out why font sometimes get messed.
+
 - [ ] Define navbar skeleton in order to wait toggle theme button.
+
+- [ ] Improve Project tags style to look more like a link.
+
+- [ ] Add dictionary definitions to not found page.
+
+- [ ] Define portfolio content:
+  - [ ] Add short description and detailed description to project shape (type).
+  - [ ] Look for a way to save project related images with good quality.
+  - [ ] Add this portfilio as part of the projects.
+
+- [ ] Write a good README explaning things like:
+  - [ ] Where I took the colorscheme.
+  - [ ] Libraries I used to make the portfolio (Stack).
+  - [ ] Why I chose to structure the project the way It is.
+  - [ ] Where I took inspiration from (Takuya and Forrest) and link their respective portfoios.
