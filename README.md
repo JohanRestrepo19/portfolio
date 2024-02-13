@@ -38,18 +38,22 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## TODO:
 
 - [x] Finish implementing the animations:
+
   - [x] Toggle Theme Icon.
   - [x] Lang Layout Component.
 
 - [x] Find out why font sometimes get messed.
 
-- [ ] Improve Project tags style to look more like a link.
+- [x] Improve Project tags style to look more like a link.
 
-- [ ] Define navbar skeleton in order to wait toggle theme button.
+- [ ] Add animated CTA button after profile descirption.
 
-- [ ] Add dictionary definitions to not found page.
+- [ ] Add dictionary definitions:
+  - [ ] Not found page.
+  - [ ] CTA button.
 
 - [ ] Define portfolio content:
+
   - [ ] Add short description and detailed description to project shape (type).
   - [ ] Look for a way to save project related images with good quality.
   - [ ] Add this portfilio as part of the projects.

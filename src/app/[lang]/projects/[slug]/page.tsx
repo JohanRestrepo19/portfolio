@@ -59,14 +59,24 @@ export default function ProjectPage({ params }: PageProps) {
         {project.tags.source && (
           <li>
             <Badge className="mr-2 rounded-md">{tags.source}</Badge>
-            <Link href={project.tags.source}>{project.tags.source}</Link>
+            <Link
+              href={project.tags.source}
+              className="text-primary underline-offset-4 hover:underline"
+            >
+              {project.tags.source}
+            </Link>
           </li>
         )}
 
         {project.tags.website && (
           <li>
             <Badge className="mr-2 rounded-md">{tags.website}</Badge>
-            <Link href={project.tags.website}>{project.tags.website}</Link>
+            <Link
+              href={project.tags.website}
+              className="text-primary underline-offset-4 hover:underline"
+            >
+              {project.tags.website}
+            </Link>
           </li>
         )}
       </ul>

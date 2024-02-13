@@ -1,15 +1,23 @@
+import { type Metadata } from 'next';
 import Container from '@/components/Container';
 import Heading from '@/components/Heading';
 import ProjectItem from '@/components/Projects';
 import { type Locale, getDictionary, getProjects } from '@/i18n';
 
-type Props = {
+type PageProps = {
   params: {
     lang: Locale;
   };
 };
 
-export default function Projects({ params }: Props) {
+export function generateMetadata({ params }: PageProps): Metadata {
+  const {
+    pages: { projects },
+  } = getDictionary(params.lang);
+  return { title: projects.heading };
+}
+
+export default function Projects({ params }: PageProps) {
   const allProjects = getProjects(params.lang);
   const {
     pages: { projects },
