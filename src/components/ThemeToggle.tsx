@@ -30,8 +30,8 @@ const ThemeToggle = () => {
     <AnimatePresence initial={false} mode="wait">
       <motion.div
         key={resolvedTheme}
-        initial={{ rotateY: 90 }}
-        animate={{ rotateY: 0 }}
+        initial={{ rotateZ: -90 }}
+        animate={{ rotateZ: 0 }}
         transition={{ duration: 0.3 }}
       >
         <Button

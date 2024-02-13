@@ -37,15 +37,15 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## TODO:
 
-- [ ] Finish implementing the animations:
-  - [ ] Toggle Theme Icon.
-  - [ ] Section Component.
+- [x] Finish implementing the animations:
+  - [x] Toggle Theme Icon.
+  - [x] Lang Layout Component.
 
-- [ ] Find out why font sometimes get messed.
-
-- [ ] Define navbar skeleton in order to wait toggle theme button.
+- [x] Find out why font sometimes get messed.
 
 - [ ] Improve Project tags style to look more like a link.
+
+- [ ] Define navbar skeleton in order to wait toggle theme button.
 
 - [ ] Add dictionary definitions to not found page.
 

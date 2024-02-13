@@ -9,9 +9,9 @@ const Footer = () => {
     layout: { footer },
   } = getDictionary(params.lang);
   return (
-    <div className="text-center text-sm opacity-40">
+    <footer className="text-center text-sm opacity-40">
       &copy;{new Date().getFullYear()} Johan Restrepo. {footer}
-    </div>
+    </footer>
   );
 };
 
