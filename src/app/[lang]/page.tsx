@@ -10,6 +10,7 @@ import Heading from '@/components/Heading';
 import Paragraph from '@/components/Paragraph';
 import Section, { SectionHeading } from '@/components/Section';
 import { Button } from '@/components/ui/button';
+import CTA from '@/components/CTA';
 
 type ContactItemPros = {
   children?: React.ReactNode;
@@ -53,9 +54,10 @@ export default function Home({ params }: PageProps) {
         </div>
 
         <article>
-          <Section>
+          <Section className="flex flex-col">
             <SectionHeading>{home.sections.profile.title}</SectionHeading>
             <Paragraph>{home.sections.profile.description}</Paragraph>
+            <CTA className="place-self-center">{home.sections.profile.cta}</CTA>
           </Section>
 
           <Section>

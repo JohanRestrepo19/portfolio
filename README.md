@@ -46,7 +46,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 - [x] Improve Project tags style to look more like a link.
 
-- [ ] Add animated CTA button after profile descirption.
+- [x] Add animated CTA button after profile descirption.
 
 - [ ] Add dictionary definitions:
   - [ ] Not found page.

@@ -61,6 +61,7 @@ export default function ProjectPage({ params }: PageProps) {
             <Badge className="mr-2 rounded-md">{tags.source}</Badge>
             <Link
               href={project.tags.source}
+              target="_blank"
               className="text-primary underline-offset-4 hover:underline"
             >
               {project.tags.source}
@@ -73,6 +74,7 @@ export default function ProjectPage({ params }: PageProps) {
             <Badge className="mr-2 rounded-md">{tags.website}</Badge>
             <Link
               href={project.tags.website}
+              target="_blank"
               className="text-primary underline-offset-4 hover:underline"
             >
               {project.tags.website}
