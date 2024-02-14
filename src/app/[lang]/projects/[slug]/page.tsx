@@ -26,7 +26,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
   const allProjects = getProjects(params.lang);
   const project = allProjects.find(project => project.slug === params.slug);
 
-  if (!project) throw new Error(`Project not found for slug: ${params.slug}`);
+  if (!project) notFound();
 
   return {
     title: project.title,

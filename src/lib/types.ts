@@ -31,12 +31,12 @@ export type Navbar = {
 };
 
 export type Pages = {
-  home: Home;
-  projects: Projects;
+  home: HomePage;
+  projects: ProjectsPage;
   project: ProjectPage;
 };
 
-export type Home = {
+export type HomePage = {
   heading: Heading;
   sections: Sections;
 };
@@ -71,6 +71,7 @@ export type Likes = {
 export type Profile = {
   title: string;
   description: string;
+  cta: string;
 };
 
 export type Web = {
@@ -81,6 +82,6 @@ export type ProjectPage = {
   tags: Tags;
 };
 
-export type Projects = {
+export type ProjectsPage = {
   heading: string;
 };

@@ -50,7 +50,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 - [ ] Add dictionary definitions:
   - [ ] Not found page.
-  - [ ] CTA button.
+  - [x] CTA button.
 
 - [ ] Define portfolio content:
 
