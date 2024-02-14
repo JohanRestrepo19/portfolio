@@ -34,6 +34,7 @@ export type Pages = {
   home: HomePage;
   projects: ProjectsPage;
   project: ProjectPage;
+  notFound: NotFoundPage;
 };
 
 export type HomePage = {
@@ -85,3 +86,9 @@ export type ProjectPage = {
 export type ProjectsPage = {
   heading: string;
 };
+
+export type NotFoundPage = {
+  error: string;
+  msg: string;
+  button: string
+}

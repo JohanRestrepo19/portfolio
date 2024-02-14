@@ -45,6 +45,11 @@
         "source": "Código",
         "website": "Sitio Web"
       }
+    },
+    "notFound": {
+      "error": "Página No Encontrada",
+      "msg": "No se encontró la página que estabas buscando.",
+      "button": "Volver"
     }
   }
 }

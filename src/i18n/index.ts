@@ -9,14 +9,12 @@ export const i18n = {
 
 export type Locale = (typeof i18n)['locales'][number];
 
-export function getDictionary(locale: Locale): Dictionary {
-  // This should return me the dictionary
-  if (locale === 'en') return enDictionary;
-  return esDictionary;
+export function getDictionary(locale: string): Dictionary {
+  if (locale === 'es') return esDictionary;
+  return enDictionary;
 }
 
-export function getProjects(locale: Locale): Project[] {
-  // This should return me the projects content in the respective language.
-  if (locale === 'en') return allEnProjects;
-  return allEsProjects;
+export function getProjects(locale: string): Project[] {
+  if (locale === 'es') return allEsProjects;
+  return allEnProjects;
 }

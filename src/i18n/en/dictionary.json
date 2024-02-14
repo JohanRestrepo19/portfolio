@@ -45,6 +45,11 @@
         "source": "Source",
         "website": "Website"
       }
+    },
+    "notFound": {
+      "error": "Page Not Found",
+      "msg": "Could not find the page you were looking for.",
+      "button": "Go Back"
     }
   }
 }
