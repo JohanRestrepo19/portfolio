@@ -2,11 +2,11 @@ import { type Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import { type Locale, getProjects, getDictionary } from '@/i18n';
 import Container from '@/components/Container';
 import Heading from '@/components/Heading';
 import Paragraph from '@/components/Paragraph';
 import { Badge } from '@/components/ui/badge';
+import { type Locale, getProjects, getDictionary } from '@/i18n';
 
 type PageProps = {
   params: {
@@ -49,7 +49,9 @@ export default function ProjectPage({ params }: PageProps) {
       <Heading as="h2" className="text-center">
         {project.title}
       </Heading>
-      <Paragraph>{project.description}</Paragraph>
+      {project.detailedDesc.map((paragraph, idx) => (
+        <Paragraph key={idx}>{paragraph}</Paragraph>
+      ))}
       <ul className="my-4 ml-4 break-words">
         <li>
           <Badge className="mr-2 rounded-md">{tags.stack}</Badge>

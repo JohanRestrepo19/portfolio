@@ -1,6 +1,7 @@
 {
   "title": "Turistriada Landing Page",
-  "description": "Descripciónd la landing page de turistriada en español Lorem para el Landing page ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
+  "desc": "Descripciónd la landing page de turistriada en español Lorem para el Landing page ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
+  "detailedDesc": [],
   "slug": "turistriada-landing-page",
   "thumbnail": "/placeholder2.svg",
   "contentImages": [],

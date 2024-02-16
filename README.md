@@ -55,7 +55,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 - [ ] Define portfolio content:
 
-  - [ ] Add short description and detailed description to project shape (type).
+  - [x] Add short description and detailed description to project shape (type).
   - [ ] Look for a way to save project related images with good quality.
   - [ ] Add this portfilio as part of the projects.
 

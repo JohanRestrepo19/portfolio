@@ -30,7 +30,7 @@ const ProjectItem = ({ project }: Props) => {
           {project.title}
         </Heading>
 
-        <p className="text-sm">{project.description}</p>
+        <p className="text-sm">{project.desc}</p>
       </Link>
     </div>
   );

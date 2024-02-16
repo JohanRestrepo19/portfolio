@@ -1,7 +1,8 @@
 // Project types
 export type Project = {
   title: string;
-  description: string;
+  desc: string;
+  detailedDesc: string[];
   slug: string;
   thumbnail: string;
   contentImages?: string[];

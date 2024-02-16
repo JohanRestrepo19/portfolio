@@ -1,6 +1,7 @@
 {
   "title": "Turistriada",
-  "description": "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
+  "desc": "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
+  "detailedDesc": [],
   "slug": "turistriada",
   "thumbnail": "/placeholder.svg",
   "contentImages": ["/placeholder.svg", "/placeholder2.svg"],
