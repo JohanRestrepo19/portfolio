@@ -1,8 +1,9 @@
 'use client';
-import { usePathname } from 'next/navigation';
-import { Button } from '@/components/ui/button';
-import { Frown } from 'lucide-react';
+
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { Frown } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 import { type Locale, getDictionary } from '@/i18n';
 
 export default function NotFound() {

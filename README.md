@@ -48,8 +48,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 - [x] Add animated CTA button after profile descirption.
 
-- [ ] Add dictionary definitions:
-  - [ ] Not found page.
+- [x] Add dictionary definitions:
+
+  - [x] Not found page.
   - [x] CTA button.
 
 - [ ] Define portfolio content:
