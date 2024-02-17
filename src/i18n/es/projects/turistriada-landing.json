@@ -1,9 +1,11 @@
 {
   "title": "Turistriada Landing Page",
-  "desc": "Descripciónd la landing page de turistriada en español Lorem para el Landing page ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
-  "detailedDesc": [],
+  "desc": "Una landing page para la aplicación web de Turistriada.",
+  "detailedDesc": [
+    "Proyecto académico de landing page para la aplicación web de Turistriada la cuál da una breve introducción sobre lo que se trata el proyecto y el equipo que lo conforma."
+  ],
   "slug": "turistriada-landing-page",
-  "thumbnail": "/placeholder2.svg",
+  "thumbnail": "/images/projects/turistriada-landing-thumbnail.svg",
   "contentImages": [],
   "tags": {
     "stack": "React, Tailwind Css, Next.js, Creative Designs Guru",
