@@ -1,8 +1,8 @@
 {
   "title": "Turistriada Landing Page",
-  "desc": "A Landing Page for Turistriada's web application.",
+  "desc": "A landing page for Turistriada's web application.",
   "detailedDesc": [
-    "Academic project of a landing page for Turistriada's web application which gives a brief introduction about what the project is about and the team that is part of it."
+    "Lading page for the web application Turistriada in which a brief introduction about what the project is about, the benefits, plans and the team members is given."
   ],
   "slug": "turistriada-landing-page",
   "thumbnail": "/images/projects/turistriada-landing-thumbnail.svg",
