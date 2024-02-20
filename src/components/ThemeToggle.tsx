@@ -1,14 +1,14 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { useTheme } from 'next-themes';
-import { Moon, Sun } from 'lucide-react';
-import { AnimatePresence, motion } from 'framer-motion';
-import { Button } from '@/components/ui/button';
+import {useState, useEffect} from 'react';
+import {useTheme} from 'next-themes';
+import {Moon, Sun} from 'lucide-react';
+import {AnimatePresence, motion} from 'framer-motion';
+import {Button} from '@/components/ui/button';
 
 const ThemeToggle = () => {
   const [isClient, setIsClient] = useState(false);
-  const { setTheme, resolvedTheme } = useTheme();
+  const {setTheme, resolvedTheme} = useTheme();
 
   useEffect(() => setIsClient(true), []);
 
@@ -30,9 +30,9 @@ const ThemeToggle = () => {
     <AnimatePresence initial={false} mode="wait">
       <motion.div
         key={resolvedTheme}
-        initial={{ rotateZ: -90 }}
-        animate={{ rotateZ: 0 }}
-        transition={{ duration: 0.3 }}
+        initial={{rotateZ: -90}}
+        animate={{rotateZ: 0}}
+        transition={{duration: 0.3}}
       >
         <Button
           size="icon"

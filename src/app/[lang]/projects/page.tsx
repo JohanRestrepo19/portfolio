@@ -1,8 +1,8 @@
-import { type Metadata } from 'next';
+import {type Metadata} from 'next';
 import Container from '@/components/Container';
 import Heading from '@/components/Heading';
 import ProjectItem from '@/components/Projects';
-import { type Locale, getDictionary, getProjects } from '@/i18n';
+import {type Locale, getDictionary, getProjects} from '@/i18n';
 
 type PageProps = {
   params: {
@@ -10,17 +10,17 @@ type PageProps = {
   };
 };
 
-export function generateMetadata({ params }: PageProps): Metadata {
+export function generateMetadata({params}: PageProps): Metadata {
   const {
-    pages: { projects },
+    pages: {projects},
   } = getDictionary(params.lang);
-  return { title: projects.heading };
+  return {title: projects.heading};
 }
 
-export default function Projects({ params }: PageProps) {
+export default function Projects({params}: PageProps) {
   const allProjects = getProjects(params.lang);
   const {
-    pages: { projects },
+    pages: {projects},
   } = getDictionary(params.lang);
 
   return (

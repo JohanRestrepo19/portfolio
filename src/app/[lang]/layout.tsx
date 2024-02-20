@@ -1,16 +1,16 @@
 'use client';
 
-import { usePathname } from 'next/navigation';
-import { AnimatePresence, motion, type Variants } from 'framer-motion';
+import {usePathname} from 'next/navigation';
+import {AnimatePresence, motion, type Variants} from 'framer-motion';
 import Container from '@/components/Container';
 import Footer from '@/components/Footer';
-import { Navbar } from '@/components/Navbar';
-import { type Locale } from '@/i18n';
+import {Navbar} from '@/components/Navbar';
+import {type Locale} from '@/i18n';
 
 const variants: Variants = {
-  hidden: { opacity: 0, rotateY: 45 },
-  active: { opacity: 1, rotateY: 0 },
-  exit: { opacity: 0, rotateY: 45 },
+  hidden: {opacity: 0, rotateY: 45},
+  active: {opacity: 1, rotateY: 0},
+  exit: {opacity: 0, rotateY: 45},
 };
 
 type Props = {
@@ -20,7 +20,7 @@ type Props = {
   };
 };
 
-export default function LangLayout({ children, params }: Props) {
+export default function LangLayout({children, params}: Props) {
   const path = usePathname();
   return (
     <>
@@ -32,9 +32,9 @@ export default function LangLayout({ children, params }: Props) {
           initial="hidden"
           animate="active"
           exit="exit"
-          transition={{ duration: 0.4, ease: 'easeInOut' }}
+          transition={{duration: 0.4, ease: 'easeInOut'}}
           onAnimationStart={() => {
-            window.scroll({ top: 0, behavior: 'smooth' });
+            window.scroll({top: 0, behavior: 'smooth'});
           }}
         >
           <Container>{children}</Container>

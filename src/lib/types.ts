@@ -91,5 +91,5 @@ export type ProjectsPage = {
 export type NotFoundPage = {
   error: string;
   msg: string;
-  button: string
-}
+  button: string;
+};

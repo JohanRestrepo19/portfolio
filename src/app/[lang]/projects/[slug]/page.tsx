@@ -1,12 +1,12 @@
-import { type Metadata } from 'next';
+import {type Metadata} from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import { notFound } from 'next/navigation';
+import {notFound} from 'next/navigation';
 import Container from '@/components/Container';
 import Heading from '@/components/Heading';
 import Paragraph from '@/components/Paragraph';
-import { Badge } from '@/components/ui/badge';
-import { type Locale, getProjects, getDictionary } from '@/i18n';
+import {Badge} from '@/components/ui/badge';
+import {type Locale, getProjects, getDictionary} from '@/i18n';
 
 type PageProps = {
   params: {
@@ -15,14 +15,14 @@ type PageProps = {
   };
 };
 
-export function generateStaticParams({ params }: PageProps) {
+export function generateStaticParams({params}: PageProps) {
   const allProjects = getProjects(params.lang);
   return allProjects.map(project => ({
     slug: project.slug,
   }));
 }
 
-export function generateMetadata({ params }: PageProps): Metadata {
+export function generateMetadata({params}: PageProps): Metadata {
   const allProjects = getProjects(params.lang);
   const project = allProjects.find(project => project.slug === params.slug);
 
@@ -33,11 +33,11 @@ export function generateMetadata({ params }: PageProps): Metadata {
   };
 }
 
-export default function ProjectPage({ params }: PageProps) {
+export default function ProjectPage({params}: PageProps) {
   const allProjects = getProjects(params.lang);
   const {
     pages: {
-      project: { tags },
+      project: {tags},
     },
   } = getDictionary(params.lang);
   const project = allProjects.find(project => project.slug === params.slug);

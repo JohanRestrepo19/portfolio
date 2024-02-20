@@ -1,4 +1,4 @@
-import { M_PLUS_Rounded_1c } from 'next/font/google';
+import {M_PLUS_Rounded_1c} from 'next/font/google';
 
 export const m_plus_rounded = M_PLUS_Rounded_1c({
   subsets: ['latin'],

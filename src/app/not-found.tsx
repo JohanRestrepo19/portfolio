@@ -1,16 +1,16 @@
 'use client';
 
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { Frown } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { type Locale, getDictionary } from '@/i18n';
+import {usePathname} from 'next/navigation';
+import {Frown} from 'lucide-react';
+import {Button} from '@/components/ui/button';
+import {type Locale, getDictionary} from '@/i18n';
 
 export default function NotFound() {
   const pathname = usePathname();
   const lang = pathname.split('/')[1] as Locale;
   const {
-    pages: { notFound },
+    pages: {notFound},
   } = getDictionary(lang);
 
   return (

@@ -1,8 +1,8 @@
-import { cn } from '@/lib/utils';
+import {cn} from '@/lib/utils';
 
 type Props = React.ComponentProps<'div'>;
 
-const Container = ({ children, className, ...props }: Props) => {
+const Container = ({children, className, ...props}: Props) => {
   return (
     <div
       {...props}

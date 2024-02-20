@@ -2,17 +2,17 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { useParams } from 'next/navigation';
+import {useParams} from 'next/navigation';
 import Heading from '@/components/Heading';
-import { type Locale } from '@/i18n';
-import { type Project } from '@/lib/types';
+import {type Locale} from '@/i18n';
+import {type Project} from '@/lib/types';
 
 type Props = {
   project: Project;
 };
 
-const ProjectItem = ({ project }: Props) => {
-  const params = useParams<{ lang: Locale }>();
+const ProjectItem = ({project}: Props) => {
+  const params = useParams<{lang: Locale}>();
 
   return (
     <div className="w-full text-center">

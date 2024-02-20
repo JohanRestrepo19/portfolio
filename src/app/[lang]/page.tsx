@@ -1,22 +1,22 @@
-import Link, { type LinkProps } from 'next/link';
-import { Linkedin, Github } from 'lucide-react';
+import Link, {type LinkProps} from 'next/link';
+import {Linkedin, Github} from 'lucide-react';
 
-import { type Locale, getDictionary, i18n } from '@/i18n';
+import {type Locale, getDictionary, i18n} from '@/i18n';
 
-import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
+import {Avatar, AvatarImage, AvatarFallback} from '@/components/ui/avatar';
 import BioSection from '@/components/Bio';
 import Container from '@/components/Container';
 import Heading from '@/components/Heading';
 import Paragraph from '@/components/Paragraph';
-import Section, { SectionHeading } from '@/components/Section';
-import { Button } from '@/components/ui/button';
+import Section, {SectionHeading} from '@/components/Section';
+import {Button} from '@/components/ui/button';
 import CTA from '@/components/CTA';
 
 type ContactItemPros = {
   children?: React.ReactNode;
 } & LinkProps;
 
-const ContactItem = ({ href, children }: ContactItemPros) => {
+const ContactItem = ({href, children}: ContactItemPros) => {
   return (
     <li>
       <Link href={href} target="_blank">
@@ -29,14 +29,14 @@ const ContactItem = ({ href, children }: ContactItemPros) => {
 };
 
 export async function generateStaticParams() {
-  return i18n.locales.map(locale => ({ lang: locale }));
+  return i18n.locales.map(locale => ({lang: locale}));
 }
 
-type PageProps = { params: { lang: Locale } };
+type PageProps = {params: {lang: Locale}};
 
-export default function Home({ params }: PageProps) {
+export default function Home({params}: PageProps) {
   const {
-    pages: { home },
+    pages: {home},
   } = getDictionary(params.lang);
 
   return (

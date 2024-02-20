@@ -1,6 +1,6 @@
-import type { Dictionary, Project } from '@/lib/types';
-import { allEnProjects, dictionary as enDictionary } from './en';
-import { allEsProjects, dictionary as esDictionary } from './es';
+import type {Dictionary, Project} from '@/lib/types';
+import {allEnProjects, dictionary as enDictionary} from './en';
+import {allEsProjects, dictionary as esDictionary} from './es';
 
 export const i18n = {
   defaultLocale: 'en',

@@ -1,11 +1,11 @@
-import { cn } from '@/lib/utils';
+import {cn} from '@/lib/utils';
 
 type Props = {
   as?: 'h1' | 'h2' | 'h3' | 'h4';
   children?: React.ReactNode;
 } & React.HTMLAttributes<HTMLHeadingElement>;
 
-const Heading = ({ as = 'h1', className, children }: Props) => {
+const Heading = ({as = 'h1', className, children}: Props) => {
   const baseStyle = 'font-bold leading-tight';
   if (as === 'h1')
     return (

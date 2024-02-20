@@ -1,27 +1,27 @@
 'use client';
 
-import Link, { LinkProps } from 'next/link';
-import { useParams, usePathname } from 'next/navigation';
-import { Github, Menu } from 'lucide-react';
+import Link, {LinkProps} from 'next/link';
+import {useParams, usePathname} from 'next/navigation';
+import {Github, Menu} from 'lucide-react';
 
 import Container from '@/components/Container';
 import ThemeToggle from '@/components/ThemeToggle';
-import { cn } from '@/lib/utils';
+import {cn} from '@/lib/utils';
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuTrigger,
   DropdownMenuItem,
 } from '@/components/ui/dropdown-menu';
-import { Button } from '@/components/ui/button';
-import { type Locale, getDictionary } from '@/i18n';
+import {Button} from '@/components/ui/button';
+import {type Locale, getDictionary} from '@/i18n';
 
 type LinkItemProps = {
   children?: React.ReactNode;
   className?: string;
 } & LinkProps;
 
-const LinkItem = ({ className, children, ...props }: LinkItemProps) => {
+const LinkItem = ({className, children, ...props}: LinkItemProps) => {
   const path = usePathname();
   return (
     <Link
@@ -41,9 +41,9 @@ const LinkItem = ({ className, children, ...props }: LinkItemProps) => {
 
 type Props = React.ComponentProps<'nav'>;
 
-export const Navbar = ({ ...props }: Props) => {
-  const params = useParams<{ lang: Locale }>();
-  const { layout } = getDictionary(params.lang);
+export const Navbar = ({...props}: Props) => {
+  const params = useParams<{lang: Locale}>();
+  const {layout} = getDictionary(params.lang);
 
   function generateLinkPath(path: string) {
     return `/${params.lang}${path}`;
