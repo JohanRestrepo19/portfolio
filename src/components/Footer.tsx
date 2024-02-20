@@ -9,7 +9,7 @@ const Footer = () => {
     layout: {footer},
   } = getDictionary(params.lang);
   return (
-    <footer className="text-center text-sm opacity-40">
+    <footer className="text-center text-sm opacity-85">
       &copy;{new Date().getFullYear()} Johan Restrepo. {footer}
     </footer>
   );

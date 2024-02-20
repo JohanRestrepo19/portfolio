@@ -18,7 +18,7 @@ type Props = Readonly<{children: React.ReactNode}>;
 
 export default function RootLayout({children}: Props) {
   return (
-    <html suppressHydrationWarning>
+    <html lang='en' suppressHydrationWarning>
       <body
         className={cn(
           m_plus_rounded.variable,

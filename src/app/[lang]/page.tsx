@@ -48,7 +48,7 @@ export default function Home({params}: PageProps) {
             <AvatarFallback>Johan Restrepo</AvatarFallback>
           </Avatar>
           <div>
-            <Heading>Johan Restrepo</Heading>
+            <Heading as='h2'>Johan Restrepo</Heading>
             <Heading as="h3">{home.heading.role}</Heading>
           </div>
         </div>
