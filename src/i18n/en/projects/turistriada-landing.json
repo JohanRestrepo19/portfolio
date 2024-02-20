@@ -5,7 +5,7 @@
     "Lading page for the web application Turistriada in which a brief introduction about what the project is about, the benefits, plans and the team members is given."
   ],
   "slug": "turistriada-landing-page",
-  "thumbnail": "/images/projects/turistriada-landing-thumbnail.svg",
+  "thumbnail": "/images/projects/turistriada-landing/turistriada-landing-thumbnail.png",
   "contentImages": [],
   "tags": {
     "stack": "React, Tailwind Css, Next.js, Creative Designs Guru",

@@ -7,7 +7,7 @@
     "Finally, it aimed to help small businesses in these cities to make their activities and the services they offer to tourists and citizens more visible."
   ],
   "slug": "turistriada",
-  "thumbnail": "/images/projects/turistriada-thumbnail.svg",
+  "thumbnail": "/images/projects/turistriada/turistriada-thumbnail.png",
   "contentImages": ["/placeholder.svg", "/placeholder2.svg"],
   "tags": {
     "stack": "React, Tailwind Css, Firabase, Vite",

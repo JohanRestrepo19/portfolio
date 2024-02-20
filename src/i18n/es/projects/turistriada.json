@@ -7,8 +7,8 @@
     "Por último, tuvo como objetivo ayudar a las empresas pequeñas de dichas ciudades a visibilidad a sus actividades y servicios que ofrecen a los turistas y ciudadanos."
   ],
   "slug": "turistriada",
-  "thumbnail": "/images/projects/turistriada-thumbnail.svg",
-  "contentImages": ["/placeholder.svg", "/placeholder2.svg"],
+  "thumbnail": "/images/projects/turistriada/turistriada-thumbnail.png",
+  "contentImages": ["/placeholder.svg", "/placeholder2.png"],
   "tags": {
     "stack": "React, Tailwind Css, Firabase, Vite",
     "source": "https://github.com/JohanRestrepo19/turistriada-frontend/",

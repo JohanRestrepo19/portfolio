@@ -56,8 +56,14 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - [ ] Define portfolio content:
 
   - [x] Add short description and detailed description to project shape (type).
-  - [ ] Look for a way to save project related images with good quality.
-  - [ ] Add this portfilio as part of the projects.
+  - [ ] Add Profile.
+  - [ ] Add Bio items.
+  - [ ] Add Turistriada showcase Images. (es/en).
+  - [ ] Delete Turistriada Landing fro projects.
+  - [ ] Add Portfilio as part of the projects (es/en).
+  - [x] Look for a way to save project related images with good quality.
+
+- [ ] Improve font looking.
 
 - [ ] Write a good README explaning things like:
   - [ ] Where I took the colorscheme.

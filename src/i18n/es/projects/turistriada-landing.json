@@ -5,7 +5,7 @@
     "Lading page para la aplicación web Turistriada en la cuál se da una breve introducción sobre lo que trata el proyecto, los beneficios, planes y los integrantes del equipo."
   ],
   "slug": "turistriada-landing-page",
-  "thumbnail": "/images/projects/turistriada-landing-thumbnail.svg",
+  "thumbnail": "/images/projects/turistriada-landing/turistriada-landing-thumbnail.png",
   "contentImages": [],
   "tags": {
     "stack": "React, Tailwind Css, Next.js, Creative Designs Guru",
