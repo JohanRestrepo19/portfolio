@@ -1,5 +1,11 @@
-const Paragraph = ({children}: React.ComponentProps<'p'>) => {
-  return <p className="hyphens-auto text-justify indent-4">{children}</p>;
+import {cn} from '@/lib/utils';
+
+const Paragraph = ({children, className}: React.ComponentProps<'p'>) => {
+  return (
+    <p className={cn('text-justify indent-4', className)}>
+      {children}
+    </p>
+  );
 };
 
 export default Paragraph;

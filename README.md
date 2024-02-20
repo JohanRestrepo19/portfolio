@@ -59,13 +59,15 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
   - [x] Add Profile.
   - [x] Add Bio items.
   - [x] Improve navbar background contrast.
-  - [ ] Improve Paragraphs alignment.
-  - [ ] Add Turistriada showcase Images. (es/en).
   - [x] Delete Turistriada Landing from projects.
+  - [ ] Add Turistriada showcase Images. (es/en).
   - [ ] Add Portfilio as part of the projects (es/en).
-  - [x] Look for a way to save project related images with good quality.
+
+- [x] Improve Paragraphs alignment.
 
 - [ ] Improve font looking.
+
+- [x] Look for a way to save project related images with good quality.
 
 - [ ] Write a good README explaning things like:
   - [ ] Where I took the colorscheme.
