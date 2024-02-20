@@ -14,7 +14,7 @@
       "sections": {
         "profile": {
           "title": "Profile",
-          "description": "Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.",
+          "description": "Johan is a software developer focused on full stack web development. He finds satisfaction and fun in the programming process, where he enjoys tackling challenges, solving problems and building applications from planning and design to implementation, hoping to make his little knowledge available to society and make a better place for everyone.",
           "cta": "My projects"
         },
         "bio": {
@@ -22,8 +22,23 @@
           "bioItems": [
             {
               "title": "Systems and Computer Engineering",
-              "description": "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
+              "description": "Completed the degree in Systems and Computer Engineering at the Universidad Tecnológica de Pereira, recognized as a distinguished student by the academic program. Where he learned about Data Structures, Computer Architecture, Software Engineering, Different Programming Paradigms among many other areas of computer science knowledge.",
               "year": "2023"
+            },
+            {
+              "title": "Software Development Intern at Accedo",
+              "description": "Collaborated in the creation of enterprise web applications through teamwork and agile methodologies. Working with technologies such as Laravel, Vue.js, React Native and Git.",
+              "year": "2022"
+            },
+            {
+              "title": "Web Development",
+              "description": "Started his journey in web development using Node.js and React and learning about API's, HTTP protocol and databases.",
+              "year": "2021"
+            },
+            {
+              "title": "The Beginning",
+              "description": "Wrote his first line of code in collage using Racket Language without understanding much of what he was doing and not realizing the world of possibilities in front of him.",
+              "year": "2018"
             }
           ]
         },

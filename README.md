@@ -56,8 +56,10 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - [ ] Define portfolio content:
 
   - [x] Add short description and detailed description to project shape (type).
-  - [ ] Add Profile.
-  - [ ] Add Bio items.
+  - [x] Add Profile.
+  - [x] Add Bio items.
+  - [ ] Improve navbar background contrast.
+  - [ ] Improve Paragraphs alignment.
   - [ ] Add Turistriada showcase Images. (es/en).
   - [x] Delete Turistriada Landing from projects.
   - [ ] Add Portfilio as part of the projects (es/en).

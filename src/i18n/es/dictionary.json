@@ -14,7 +14,7 @@
       "sections": {
         "profile": {
           "title": "Perfil",
-          "description": "Descripcion en español de mi perfil Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.",
+          "description": "Johan es un desarrollador de software enfocado en el desarrollo web full stack. Encuentra satisfacción y diversión en el proceso de programación, donde disfruta abordando desafíos, resolviendo problemas y construyendo aplicaciones desde la planeación y el diseño hasta la implementación, con la esperanza de poner su poco conocimiento a disposición de la sociedad y hacer un lugar mejor para todos.",
           "cta": "Mis Proyectos"
         },
         "bio": {
@@ -22,8 +22,23 @@
           "bioItems": [
             {
               "title": "Ingeniería de Sistemas y Computación",
-              "description": "Descripción en español de la carrera Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
+              "description": "Completó el grado en Ingeniería de Sistemas y Computación en la Universidad Tecnológica de Pereira, reconocido como estudiante distinguido por el programa académico. Donde aprendió sobre Estructuras de Datos, Arquitectura de Computadoras, Ingeniería de Software, Diferentes Paradigmas de Programación entre muchas otras áreas del conocimiento de ciencias de la computación.",
               "year": "2023"
+            },
+            {
+              "title": "Practicante Desarrollo de Software en Accedo",
+              "description": "Colaboró en la creación de aplicaciones web empresariales mediante el trabajo en equipo y metodologías ágiles. Trabajando con tecnologías cómo Laravel, Vue.js, React Native y Git. ",
+              "year": "2022"
+            },
+            {
+              "title": "Desarrollo Web",
+              "description": "Empezó su viaje en el desarrollo web utilizando Node.js y React y aprendiendo sobre API’s, protocolo HTTP y bases de datos.",
+              "year": "2021"
+            },
+            {
+              "title": "El Inicio",
+              "description": "Escribió su primera línea de código en la universidad utilizando Racket Language sin entender mucho de lo que estaba haciendo y sin darse cuenta del mundo de posibilidades que había frente a él.",
+              "year": "2018"
             }
           ]
         },
