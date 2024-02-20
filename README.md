@@ -59,7 +59,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
   - [ ] Add Profile.
   - [ ] Add Bio items.
   - [ ] Add Turistriada showcase Images. (es/en).
-  - [ ] Delete Turistriada Landing fro projects.
+  - [x] Delete Turistriada Landing from projects.
   - [ ] Add Portfilio as part of the projects (es/en).
   - [x] Look for a way to save project related images with good quality.
 
