@@ -65,7 +65,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 - [x] Improve Paragraphs alignment.
 
-- [ ] Improve font looking.
+- [x] Improve font looking.
 
 - [x] Look for a way to save project related images with good quality.
 

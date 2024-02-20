@@ -1,4 +1,5 @@
 import {cn} from '@/lib/utils';
+import { m_plus_rounded } from '@/components/fonts';
 
 type Props = {
   as?: 'h1' | 'h2' | 'h3' | 'h4';
@@ -6,7 +7,7 @@ type Props = {
 } & React.HTMLAttributes<HTMLHeadingElement>;
 
 const Heading = ({as = 'h1', className, children}: Props) => {
-  const baseStyle = 'font-bold leading-tight';
+  const baseStyle = `font-bold leading-tight ${m_plus_rounded.className}`;
   if (as === 'h1')
     return (
       <h1 className={cn(baseStyle, 'text-4xl tracking-tight', className)}>
