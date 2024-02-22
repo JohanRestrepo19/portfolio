@@ -8,10 +8,13 @@
   ],
   "slug": "turistriada",
   "thumbnail": "/images/projects/turistriada/turistriada-thumbnail.png",
-  "contentImages": ["/placeholder.svg", "/placeholder2.svg"],
+  "contentImages": [
+    "/images/projects/turistriada/turistriada-01.png",
+    "/images/projects/turistriada/turistriada-02.png"
+  ],
   "tags": {
     "stack": "React, Tailwind Css, Firabase, Vite",
     "source": "https://github.com/JohanRestrepo19/turistriada-frontend/",
-    "website": "https://turistriada.web.app/"
+    "website": "https://turistriada.netlify.app/"
   }
 }

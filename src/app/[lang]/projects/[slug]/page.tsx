@@ -93,6 +93,7 @@ export default function ProjectPage({params}: PageProps) {
           width={512}
           height={320}
           priority
+          quality={100}
           className="mb-4 w-full rounded-lg"
         />
       ))}
