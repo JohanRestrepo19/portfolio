@@ -90,8 +90,8 @@ export default function ProjectPage({params}: PageProps) {
           key={img}
           src={img}
           alt={project.title}
-          width={512}
-          height={320}
+          width={1280}
+          height={720}
           priority
           quality={100}
           className="mb-4 w-full rounded-lg"

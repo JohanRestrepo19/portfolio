@@ -60,7 +60,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
   - [x] Add Bio items.
   - [x] Improve navbar background contrast.
   - [x] Delete Turistriada Landing from projects.
-  - [ ] Add Turistriada showcase Images.
+  - [x] Add Turistriada showcase Images.
   - [ ] Add Portfilio as part of the projects.
 
 - [ ] Improve tags layout on project page.
