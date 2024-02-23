@@ -1,0 +1,18 @@
+{
+  "title": "Banker's Algorithm",
+  "desc": "Application used to analyze and understand the behavior of the allocation of resources between processes in operating systems.",
+  "detailedDesc": [
+    "This project models the banker's algorithm which, in the context of operating systems, allows us to terminate if, given an initial state of resource requests from a given number of processes, a safe state is reached and all resource requests from these processes are dispatched in order to avoid a Deadlock state."
+  ],
+  "slug": "bankers-algorithm",
+  "thumbnail": "/images/projects/bankers-algorithm/bankers-algorithm-thumbnail.png",
+  "contentImages": [
+    "/images/projects/bankers-algorithm/bankers-algorithm-thumbnail.png",
+    "/images/projects/bankers-algorithm/bankers-algorithm-01.png",
+    "/images/projects/bankers-algorithm/bankers-algorithm-02.png"
+  ],
+  "tags": {
+    "stack": "Python 3, Tkinter",
+    "source": "https://github.com/JohanRestrepo19/algoritmo-del-banquero"
+  }
+}

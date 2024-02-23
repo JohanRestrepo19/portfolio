@@ -1,0 +1,18 @@
+{
+  "title": "Algoritmo del Banquero",
+  "desc": "Aplicación que sirve para analizar y comprender el comportamiento de la asignación de recursos entre procesos de los sistemas operativos.",
+  "detailedDesc": [
+    "Este proyecto modela el algoritmo del banquero el cual, en el contexto de los sistemas operativos, nos permite de terminar si, dado un estado inicial de peticiones de recursos de una cantidad determinada de procesos, se llega a un estado seguro y se logra despachar todas las peticiones de recursos de dichos procesos con el fin de evitar un estado de Deadlock"
+  ],
+  "slug": "bankers-algorithm",
+  "thumbnail": "/images/projects/bankers-algorithm/bankers-algorithm-thumbnail.png",
+  "contentImages": [
+    "/images/projects/bankers-algorithm/bankers-algorithm-thumbnail.png",
+    "/images/projects/bankers-algorithm/bankers-algorithm-01.png",
+    "/images/projects/bankers-algorithm/bankers-algorithm-02.png"
+  ],
+  "tags": {
+    "stack": "Python 3, Tkinter",
+    "source": "https://github.com/JohanRestrepo19/algoritmo-del-banquero"
+  }
+}
