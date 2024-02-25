@@ -62,9 +62,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
   - [x] Delete Turistriada Landing from projects.
   - [x] Add Turistriada showcase Images.
   - [x] Add Banker's algorithm.
-  - [ ] Add Final computer graphics project.
-  - [ ] Add Next Pokemon Project.
-  - [ ] Add Portfilio as part of the projects.
 
 - [ ] Improve tags layout on project page.
 
