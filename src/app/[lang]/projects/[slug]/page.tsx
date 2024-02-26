@@ -4,9 +4,8 @@ import {notFound} from 'next/navigation';
 import Container from '@/components/Container';
 import Heading from '@/components/Heading';
 import Paragraph from '@/components/Paragraph';
-import {ProjectTagItem} from '@/components/projects/ProjectTagItem';
+import {ProjectTagItem, ProjectTagLink} from '@/components/projects';
 import {type Locale, getProjects, getDictionary} from '@/i18n';
-import {ProjectTagLink} from '@/components/projects';
 
 type PageProps = {
   params: {
