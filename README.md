@@ -1,78 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Johan's Portfolio
 
-## Getting Started
+## Stack
 
-First, run the development server:
+- [Next.js](https://nextjs.org/) - React Framework for building full-stack web applications.
+- [Tailwind Css](https://tailwindcss.com/) - Utility-first Css framework.
+- [Shadcn/ui](https://ui.shadcn.com/) - Collection of re-usable components.
+- [Framer Motion](https://www.framer.com/motion/) - Simple motion library for React.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Project Structure
+
+```
+.
+├── src
+│   │   # Next.js App router
+│   ├── app
+│   ├── components
+│   │   │   # This folder is used to save Shadcn components
+│   │   └── ui
+│   │   # This is where I put projects and dictionary content
+│   ├── i18n
+│   │   ├── en
+│   │   └── es
+│   │   # Types and utility functions
+│   └── lib
+│   # Static assets like images and fonts
+└── public
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+I decided to put all of my portfolio content in i18n/ folder because I wanted to build it in my mother language (Spanish) and English. I use some json files to define my projects content and also a dictionary file where I provide definitions for both languages.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Source of Inspiration
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- [Takuya's Portfolio](https://www.craftz.dog/).
+- [Forrest's Portfolio](https://thehackershideout.com/).
+- [Rose Pine Palette](https://rosepinetheme.com/).
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-## TODO:
-
-- [x] Finish implementing the animations:
-
-  - [x] Toggle Theme Icon.
-  - [x] Lang Layout Component.
-
-- [x] Find out why font sometimes get messed.
-
-- [x] Improve Project tags style to look more like a link.
-
-- [x] Add animated CTA button after profile descirption.
-
-- [x] Add dictionary definitions:
-
-  - [x] Not found page.
-  - [x] CTA button.
-
-- [ ] Define portfolio content:
-
-  - [x] Add short description and detailed description to project shape (type).
-  - [x] Add Profile.
-  - [x] Add Bio items.
-  - [x] Improve navbar background contrast.
-  - [x] Delete Turistriada Landing from projects.
-  - [x] Add Turistriada showcase Images.
-  - [x] Add Banker's algorithm.
-
-- [ ] Improve tags layout on project page.
-
-- [x] Improve Paragraphs alignment.
-
-- [x] Improve font looking.
-
-- [x] Look for a way to save project related images with good quality.
-
-- [ ] Write a good README explaning things like:
-  - [ ] Where I took the colorscheme.
-  - [ ] Libraries I used to make the portfolio (Stack).
-  - [ ] Why I chose to structure the project the way It is.
-  - [ ] Where I took inspiration from (Takuya and Forrest) and link their respective portfoios.
+As you may have noticed, this portfolio is highly inspired by Takuya's portfolio because I really liked it, and I also added some elements from Forrest's portfolio. Finally, the theme/colorscheme I chose is Rose Pine which I really enjoy and use in my code editor. I hope you like this portfolio. 🙌
