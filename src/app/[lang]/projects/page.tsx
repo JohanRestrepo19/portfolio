@@ -1,7 +1,7 @@
 import {type Metadata} from 'next';
 import Container from '@/components/Container';
 import Heading from '@/components/Heading';
-import ProjectItem from '@/components/Projects';
+import { ProjectItem } from '@/components/projects';
 import {type Locale, getDictionary, getProjects} from '@/i18n';
 
 type PageProps = {

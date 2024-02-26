@@ -1,12 +1,12 @@
 import {type Metadata} from 'next';
-import Link from 'next/link';
 import Image from 'next/image';
 import {notFound} from 'next/navigation';
 import Container from '@/components/Container';
 import Heading from '@/components/Heading';
 import Paragraph from '@/components/Paragraph';
-import {Badge} from '@/components/ui/badge';
+import {ProjectTagItem} from '@/components/projects/ProjectTagItem';
 import {type Locale, getProjects, getDictionary} from '@/i18n';
+import {ProjectTagLink} from '@/components/projects';
 
 type PageProps = {
   params: {
@@ -52,36 +52,14 @@ export default function ProjectPage({params}: PageProps) {
       {project.detailedDesc.map((paragraph, idx) => (
         <Paragraph key={idx}>{paragraph}</Paragraph>
       ))}
-      <ul className="my-4 ml-4 break-words">
-        <li>
-          <Badge className="mr-2 rounded-md">{tags.stack}</Badge>
-          <span>{project.tags.stack}</span>
-        </li>
+      <ul className="my-4 ml-4 break-words space-y-2 md:space-y-0">
+        <ProjectTagItem title={tags.stack} desc={project.tags.stack} />
 
-        {project.tags.source && (
-          <li>
-            <Badge className="mr-2 rounded-md">{tags.source}</Badge>
-            <Link
-              href={project.tags.source}
-              target="_blank"
-              className="text-primary underline-offset-4 hover:underline"
-            >
-              {project.tags.source}
-            </Link>
-          </li>
+        {project.tags.source && tags.source && (
+          <ProjectTagLink title={tags.source} link={project.tags.source} />
         )}
-
-        {project.tags.website && (
-          <li>
-            <Badge className="mr-2 rounded-md">{tags.website}</Badge>
-            <Link
-              href={project.tags.website}
-              target="_blank"
-              className="text-primary underline-offset-4 hover:underline"
-            >
-              {project.tags.website}
-            </Link>
-          </li>
+        {project.tags.website && tags.website && (
+          <ProjectTagLink title={tags.website} link={project.tags.website} />
         )}
       </ul>
 

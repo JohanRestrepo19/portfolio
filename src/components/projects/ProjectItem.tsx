@@ -7,11 +7,7 @@ import Heading from '@/components/Heading';
 import {type Locale} from '@/i18n';
 import {type Project} from '@/lib/types';
 
-type Props = {
-  project: Project;
-};
-
-const ProjectItem = ({project}: Props) => {
+export function ProjectItem ({project}: {project: Project}) {
   const params = useParams<{lang: Locale}>();
 
   return (
@@ -36,4 +32,3 @@ const ProjectItem = ({project}: Props) => {
   );
 };
 
-export default ProjectItem;
