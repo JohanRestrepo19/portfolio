@@ -44,11 +44,11 @@ export default function Home({params}: PageProps) {
       <Container>
         <div className="mb-6 flex flex-col items-center gap-2 text-center">
           <Avatar className="h-24 w-24">
-            <AvatarImage src="/avatar.png" alt='avatar' />
+            <AvatarImage src="/avatar.png" alt="avatar" />
             <AvatarFallback>Johan Restrepo</AvatarFallback>
           </Avatar>
           <div>
-            <Heading as='h2'>Johan Restrepo</Heading>
+            <Heading as="h2">Johan Restrepo</Heading>
             <Heading as="h3">{home.heading.role}</Heading>
           </div>
         </div>

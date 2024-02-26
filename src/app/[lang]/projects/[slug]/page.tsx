@@ -52,7 +52,7 @@ export default function ProjectPage({params}: PageProps) {
       {project.detailedDesc.map((paragraph, idx) => (
         <Paragraph key={idx}>{paragraph}</Paragraph>
       ))}
-      <ul className="my-4 ml-4 break-words space-y-2 md:space-y-0">
+      <ul className="my-4 ml-4 space-y-2 break-words md:space-y-0">
         <ProjectTagItem title={tags.stack} desc={project.tags.stack} />
 
         {project.tags.source && tags.source && (

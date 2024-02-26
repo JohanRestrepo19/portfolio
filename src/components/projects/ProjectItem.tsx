@@ -7,7 +7,7 @@ import Heading from '@/components/Heading';
 import {type Locale} from '@/i18n';
 import {type Project} from '@/lib/types';
 
-export function ProjectItem ({project}: {project: Project}) {
+export function ProjectItem({project}: {project: Project}) {
   const params = useParams<{lang: Locale}>();
 
   return (
@@ -30,5 +30,4 @@ export function ProjectItem ({project}: {project: Project}) {
       </Link>
     </div>
   );
-};
-
+}

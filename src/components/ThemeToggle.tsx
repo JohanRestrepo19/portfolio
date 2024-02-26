@@ -38,7 +38,7 @@ const ThemeToggle = () => {
           size="icon"
           onClick={handleToggleTheme}
           className="bg-[#c4a7e7] hover:bg-purple-700 dark:bg-[#f6c177] dark:hover:bg-orange-300"
-          aria-label='Toggle theme button'
+          aria-label="Toggle theme button"
         >
           {Icon}
         </Button>

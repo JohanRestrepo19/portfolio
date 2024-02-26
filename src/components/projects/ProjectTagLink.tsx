@@ -3,7 +3,7 @@ import {Badge} from '@/components/ui/badge';
 
 export function ProjectTagLink({title, link}: {title: string; link: string}) {
   return (
-    <li className='flex flex-col items-start md:flex-row md:gap-x-2'>
+    <li className="flex flex-col items-start md:flex-row md:gap-x-2">
       <Badge className="rounded-md">{title}</Badge>
       <Link
         href={link}

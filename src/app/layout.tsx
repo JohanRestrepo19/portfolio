@@ -18,7 +18,7 @@ type Props = Readonly<{children: React.ReactNode}>;
 
 export default function RootLayout({children}: Props) {
   return (
-    <html lang='en' suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
           open_sans.variable,

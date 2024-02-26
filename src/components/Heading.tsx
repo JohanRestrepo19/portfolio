@@ -1,5 +1,5 @@
 import {cn} from '@/lib/utils';
-import { m_plus_rounded } from '@/components/fonts';
+import {m_plus_rounded} from '@/components/fonts';
 
 type Props = {
   as?: 'h1' | 'h2' | 'h3' | 'h4';
