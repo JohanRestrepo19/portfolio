@@ -5,7 +5,6 @@ import {cn} from '@/lib/utils';
 import {open_sans} from '@/components/fonts';
 import {ThemeProvider} from '@/components/ThemeProvider';
 
-// TODO: Add custom favicon
 export const metadata: Metadata = {
   title: {
     template: '%s | Johan Restrepo',
