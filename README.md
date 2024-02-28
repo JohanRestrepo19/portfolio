@@ -1,6 +1,6 @@
 # Johan's Portfolio
 
-[https://portfolio-one-gilt-42.vercel.app/](https://portfolio-one-gilt-42.vercel.app/)
+[https://www.johanrestrepo.online/](https://www.johanrestrepo.online/)
 
 ## Stack
 
