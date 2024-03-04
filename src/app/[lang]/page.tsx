@@ -4,6 +4,7 @@ import {Linkedin, Github} from 'lucide-react';
 import {type Locale, getDictionary, i18n} from '@/i18n';
 
 import {Avatar, AvatarImage, AvatarFallback} from '@/components/ui/avatar';
+import {Badge} from '@/components/ui/badge';
 import BioSection from '@/components/Bio';
 import Container from '@/components/Container';
 import Heading from '@/components/Heading';
@@ -58,6 +59,20 @@ export default function Home({params}: PageProps) {
             <SectionHeading>{home.sections.profile.title}</SectionHeading>
             <Paragraph>{home.sections.profile.description}</Paragraph>
             <CTA className="place-self-center">{home.sections.profile.cta}</CTA>
+          </Section>
+
+          <Section>
+            <SectionHeading>
+              {home.sections.preferredStack.title}
+            </SectionHeading>
+            <div className="flex flex-wrap items-center justify-around gap-2 sm:justify-start">
+              <Badge className="bg-foreground text-sm">Git</Badge>
+              <Badge className="bg-foreground text-sm">Next.js</Badge>
+              <Badge className="bg-foreground text-sm">Python</Badge>
+              <Badge className="bg-foreground text-sm">React</Badge>
+              <Badge className="bg-foreground text-sm">SQL</Badge>
+              <Badge className="bg-foreground text-sm">Typescript</Badge>
+            </div>
           </Section>
 
           <Section>
