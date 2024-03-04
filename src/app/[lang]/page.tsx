@@ -1,37 +1,17 @@
 import Link, {type LinkProps} from 'next/link';
 import {Linkedin, Github} from 'lucide-react';
 
-import {type Locale, getDictionary, i18n} from '@/i18n';
-
 import {Avatar, AvatarImage, AvatarFallback} from '@/components/ui/avatar';
 import {Badge} from '@/components/ui/badge';
 import BioSection from '@/components/Bio';
 import Container from '@/components/Container';
+import ContactItem from '@/components/ContactItem';
 import Heading from '@/components/Heading';
 import Paragraph from '@/components/Paragraph';
 import Section, {SectionHeading} from '@/components/Section';
-import {Button} from '@/components/ui/button';
 import CTA from '@/components/CTA';
 
-type ContactItemPros = {
-  children?: React.ReactNode;
-} & LinkProps;
-
-const ContactItem = ({href, children}: ContactItemPros) => {
-  return (
-    <li>
-      <Link href={href} target="_blank">
-        <Button variant="ghost" className="font-bold text-primary">
-          {children}
-        </Button>
-      </Link>
-    </li>
-  );
-};
-
-export async function generateStaticParams() {
-  return i18n.locales.map(locale => ({lang: locale}));
-}
+import {type Locale, getDictionary, i18n} from '@/i18n';
 
 type PageProps = {params: {lang: Locale}};
 
@@ -121,4 +101,8 @@ export default function Home({params}: PageProps) {
       </Container>
     </main>
   );
+}
+
+export async function generateStaticParams() {
+  return i18n.locales.map(locale => ({lang: locale}));
 }

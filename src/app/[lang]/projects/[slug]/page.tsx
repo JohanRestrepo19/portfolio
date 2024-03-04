@@ -14,24 +14,6 @@ type PageProps = {
   };
 };
 
-export function generateStaticParams({params}: PageProps) {
-  const allProjects = getProjects(params.lang);
-  return allProjects.map(project => ({
-    slug: project.slug,
-  }));
-}
-
-export function generateMetadata({params}: PageProps): Metadata {
-  const allProjects = getProjects(params.lang);
-  const project = allProjects.find(project => project.slug === params.slug);
-
-  if (!project) notFound();
-
-  return {
-    title: project.title,
-  };
-}
-
 export default function ProjectPage({params}: PageProps) {
   const allProjects = getProjects(params.lang);
   const {
@@ -76,4 +58,22 @@ export default function ProjectPage({params}: PageProps) {
       ))}
     </Container>
   );
+}
+
+export function generateStaticParams({params}: PageProps) {
+  const allProjects = getProjects(params.lang);
+  return allProjects.map(project => ({
+    slug: project.slug,
+  }));
+}
+
+export function generateMetadata({params}: PageProps): Metadata {
+  const allProjects = getProjects(params.lang);
+  const project = allProjects.find(project => project.slug === params.slug);
+
+  if (!project) notFound();
+
+  return {
+    title: project.title,
+  };
 }

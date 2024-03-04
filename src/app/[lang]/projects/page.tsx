@@ -10,13 +10,6 @@ type PageProps = {
   };
 };
 
-export function generateMetadata({params}: PageProps): Metadata {
-  const {
-    pages: {projects},
-  } = getDictionary(params.lang);
-  return {title: projects.heading};
-}
-
 export default function Projects({params}: PageProps) {
   const allProjects = getProjects(params.lang);
   const {
@@ -35,4 +28,11 @@ export default function Projects({params}: PageProps) {
       </div>
     </Container>
   );
+}
+
+export function generateMetadata({params}: PageProps): Metadata {
+  const {
+    pages: {projects},
+  } = getDictionary(params.lang);
+  return {title: projects.heading};
 }
