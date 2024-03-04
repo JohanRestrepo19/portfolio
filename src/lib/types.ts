@@ -49,6 +49,7 @@ export type Heading = {
 
 export type Sections = {
   profile: Profile;
+  preferredStack: PreferredStack;
   bio: Bio;
   likes: Likes;
   web: Web;
@@ -75,6 +76,10 @@ export type Profile = {
   description: string;
   cta: string;
 };
+
+export type PreferredStack = {
+  title: string;
+}
 
 export type Web = {
   title: string;

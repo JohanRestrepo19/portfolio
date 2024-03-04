@@ -17,6 +17,9 @@
           "description": "Johan is a software developer focused on full stack web development. He finds satisfaction and fun in the programming process, where he enjoys tackling challenges, solving problems and building applications from planning and design to implementation, hoping to make his knowledge available to society and make a better place for everyone.",
           "cta": "My projects"
         },
+        "preferredStack": {
+          "title": "Stack"
+        },
         "bio": {
           "title": "Bio",
           "bioItems": [
